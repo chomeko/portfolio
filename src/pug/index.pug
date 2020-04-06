@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content="転職用ポートフォリオ")
+    meta(name="keywords" content="ポートフォリオ, コーディング, HTML")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+    title chomeko`s Portfolio
+  body
+    header.header
+      nav.header__nav
+        ul.header__list
+          li.header__list__item Skill
+            a(href="#")
+          li.header__list__item Study
+            a(href="#")
+          li.header__list__item Production
+            a(href="#")
+          li.header__list__item Contact
+            a(href="#")
+      .header__links
+        a(href="")
+          span twitter
+        a(href="")
+          span github
+    main
+      section.top
+        .top__container
+          h1.top__title Chomeko`s Portfolio
+          .top__comment
+          .top__table
+            dl
+              dt 年齢 :
+              dd 31
+            dl
+              dt 身長　:
+              dd 168cm
+            dl
+              dt 誕生日 :
+              dd s64.1.1
+            dl
+              dt 住所 :
+              dd 愛知県名古屋市
+            dl
+              dt 趣味 :
+              dd GameとAnime
+            dl
+              dt
+              dd 実務経験なし
+            dl
+              dt
+              dd 独学１年目
+      section.skill
+        .skill__container
+          h2.title Skill
+          span.title__line
+          ul.skill__left
+            li.skill__item Html
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 50
+              .skill__item__meter
+            li.skill__item Pug
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 50
+              .skill__item__meter
+            li.skill__item Sass
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel  レベル 50
+              .skill__item__meter
+            li.skill__item Gulp
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 50
+              .skill__item__meter
+          ul.skill__right
+            li.skill__item Bootstrap
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 50
+              .skill__item__meter
+            li.skill__item Ruby on rails
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 40
+              .skill__item__meter
+            li.skill__item React
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel  レベル 20
+              .skill__item__meter
+            li.skill__item JavaScript
+              span.skill__item__name
+              img(src="", alt="")
+              span.skill__item__lebel レベル 20
+              .skill__item__meter
+      section.tool
+        .tool__container
+          h2.title Tool
+          span.title__line
+          ul.tool__left
+            li.tool__item VScode
+              span.tool__item__name
+              img(src="", alt="")
+              span.tool__item__lebel レベル 60
+              .tool__item__meter
+            li.tool__item Github
+              span.tool__item__name
+              img(src="", alt="")
+              span.tool__item__lebel レベル 60
+              .tool__item__meter
+          ul.tool__right
+            li.tool__item XD
+              span.tool__item__name
+              img(src="", alt="")
+              span.tool__item__lebel レベル 40
+              .tool__item__meter
+            li.tool__item Slack
+              span.tool__item__name
+              img(src="", alt="")
+              span.tool__item__lebel レベル 60
+              .tool__item__meter
+
+      section.study
+        .study__container
+          h2.title Study record
+          span.title__line
+          .study__wrapper
+            p.study__text__top 平成30年3月24日
+            p.study__text__middle プログラミング勉強開始
+            p.study__text__bottom
+              | プログラミング勉強を始めてから自分が何を
+              br
+              | してきたかを簡単にまとめました
+            a.btn(href="")
+              p 勉強記録を見る
+      section.production
+        .production__container
+          h2.title Production
+          span.title__line
+          .production__wrapper
+            ul.production__list
+              li.production__item
+                p.production__item__title calculator
+                p.production__item__text
+                  | Ruby on railsをProgateで勉強し１ヶ月後に初めて
+                  br
+                  | 作った作品になります。
+                  br
+                  | 現職で使える計算機です…
+                  a(href="")
+                    |もっと見る
+                img
+              li.production__item
+                p.production__item__title PGMG
+                p.production__item__text
+                  | Ruby on railsチュートリアル後に作成したブログ
+                  br
+                  | サイトになります。
+                  br
+                  | 勉強したことを記事にしてます…
+                  a(href="")
+                    | もっと見る
+                img
+              li.production__item
+                p.production__item__title デイトラ2nd
+                p.production__item__text
+                  | Html＆cssの理解を深めるために、はにわさんの
+                  br
+                  | デイトラ2ndをやりました。gulp,pug,sassを使って
+                  br
+                  | 初めてコーディングしてます…
+                  a(href="")
+                    | もっと見る
+                img
+              li.production__item
+                p.production__item__title Bell
+                p.production__item__text
+                | Reactに興味を持ち勉強後、twitterの1週間企画
+                br
+                | に参加して初めてReactで作成しました。
+                br
+                | Redux,persist,firebaseで作りました…
+                a(href="")
+                  |もっと見る
+                img
+              li.production__item
+                p.production__item__title portfolio
+                p.production__item__text
+                  | 就職活動をするためポートフォリオの作成をしました。
+                  br
+                  | XDで自分でデザインをし、gulp,pug,sassでコーディング
+                  br
+                  | しています…
+                  a(href="")
+                    | もっと見る
+                img
+      section.contact
+        .contact__container
+          .contact__wrapper
+            h2.title contact
+            span.title__line
+            form
+              input(id="name" name="name" type="text" placeholder="Name")
+              input(id="email" name="email" type="text" placeholder="Email")
+              textarea(id="commet" name="commet", cols="30", rows="10")
+              a.btn(href="")
+                p submit
+    footer.footer
+      .footer__copyrite
+        small ©️chomeko portfolio

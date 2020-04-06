@@ -1,0 +1,83 @@
+/* mixin */
+=inner($inner)
+  max-width: $inner
+  margin: auto
+
+//トップに戻るbutton
+=topbtn
+  background-image: url(..)
+  width: 5.5rem
+  height: 5.5rem
+  color: $font-color
+  +mq(sp)
+    width: 4rem
+    height: 4rem
+    background-size: cover
+
+//btn
+=btn($w,$h)
+  width: 5.7rem
+  height: 4.2rem
+  color: $bg-color
+  +mq(sp)
+    width: $w
+    height: $h
+
+$layout-width-inner: 768px
+/* sp: スマホ */
+/* sp2: swiper用 */
+/* pc: パソコン */
+$breakpoints: ("sp": "screen and (max-width: 767px)","pc": "screen and (min-width: #{$layout-width-inner})")
+// メディアクエリー
+=mq($breakpoint: sp)
+  @media #{map-get($breakpoints, $breakpoint)}
+    @content
+
+/* 変数 */
+$font-color: #333333
+$grey: #555555
+$bg-color: #FFFFFF
+$yellow: #F6CA06
+$purple: #744199
+
+/* style */
+
+$font: "YuGothic", "Yu Gothic","游ゴシック", "游ゴシック体", sans-serif
+//$font_en:
+
+a
+  color: $font-color
+  text-decoration: none
+a, button
+  transition: .3s
+  &:hover
+    opacity: .6
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.4rem
+  line-height: 1.5
+  font-family: $font
+  color: $font-color
+  background: $bg-color
+  // その都度ここに追加
+*
+  box-sizing: border-box
+​
+ul,ol
+  list-style: none
+  padding-left: 0
+  margin: 0
+
+dl, dt, dd
+  margin: 0
+
+img
+  margin: 0
+  padding: 0
+  vertical-align: bottom
+
+input, select, textarea
+  outline: none
