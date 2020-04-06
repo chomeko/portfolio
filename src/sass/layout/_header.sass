@@ -1,0 +1,52 @@
+.header
+  width: 9rem
+  height: 100vh
+  position: fixed
+  display: flex//両サイドに分ける為
+  &__nav
+  &__list
+    width: 9rem
+    margin-top: 8rem
+    &__item
+      display: flex
+      justify-content: center
+      a
+        writing-mode: vertical-lr
+        font-size: 1.6rem
+        font-weight: bold
+        margin-bottom: 9.8rem
+        letter-spacing: 0.5em
+  &__links
+    margin-top: 8rem
+    position: fixed
+    right: 0
+    a
+      display: block
+      width: 3rem
+      height: 3rem
+      box-shadow: .2rem .4rem .6rem #00000053
+      border-radius: .4rem
+      margin-bottom: 1.6rem
+      margin-right: 3.5rem
+      position: relative
+      &:hover
+        opacity: 1
+        box-shadow: 0rem 0rem .1rem #00000053
+      .twitter
+        position: absolute
+        background-image: url(/img/https___cdn.svgporn.com_logos_twitter.svg-0.svg)
+        background-size: contain
+        width: 2rem
+        height: 2rem
+        top: 70%
+        left: 55%
+        transform: translate(-55%, -70%)
+    .github
+      position: absolute
+      background-image: url(/img/github_badge.svg)
+      background-size: contain
+      width: 2.5rem
+      height: 2.5rem
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
