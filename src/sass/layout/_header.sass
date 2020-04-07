@@ -4,6 +4,8 @@
   position: fixed
   display: flex//両サイドに分ける為
   &__nav
+    +mq(sp)
+      display: none
   &__list
     width: 9rem
     margin-top: 8rem
@@ -20,15 +22,22 @@
     margin-top: 8rem
     position: fixed
     right: 0
+    z-index: 10
+    +mq(sp)
+      margin-top: 2rem
     a
       display: block
       width: 3rem
       height: 3rem
       box-shadow: .2rem .4rem .6rem #00000053
+      background: $bg-color
       border-radius: .4rem
       margin-bottom: 1.6rem
       margin-right: 3.5rem
       position: relative
+      +mq(sp)
+        display: inline-block
+        margin-right: 1rem
       &:hover
         opacity: 1
         box-shadow: 0rem 0rem .1rem #00000053
