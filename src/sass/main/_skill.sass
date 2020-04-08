@@ -1,0 +1,68 @@
+.skill
+  &__container
+    +inner(769px)
+  .title
+    text-align: center
+    font-size: 5rem
+    margin-bottom: 4.8rem
+    font-weight: normal
+    +mq(sp)
+      font-size: 3rem
+      margin-bottom: 1.6rem
+  .title__line
+    display: block
+    margin: auto
+    width: 16rem
+    height: .1rem
+    background: $yellow
+    +mq(sp)
+      width: 8rem
+  &__wrapper
+    display: flex//ulにflexで全体を横並びにする
+    justify-content: space-between//両端にしてる
+    flex-wrap: wrap//改行させる
+    align-items: center
+    margin-top: 10.4rem
+    +mq(sp)
+      display: block
+      padding: 2rem 2rem
+      margin-top: 4rem
+  &__item
+    display: flex//iconとdescを横並びにする
+    align-items: flex-end//下揃えにする
+    margin-bottom: 7.2rem
+    +mq(sp)
+      width: 30rem
+      margin: 0 auto 2.4rem // 上　左右　下
+    &__icon
+      margin-right: 2rem
+      +mq(sp)
+        margin-right: 1rem
+    &__name
+      text-align: center
+      margin-bottom: 1.6rem
+      color: $grey
+      +mq(sp)
+        margin-bottom: 0.8rem
+        letter-spacing: -.1em
+    &__img
+      width: 8rem
+      height: 8rem
+      +mq(sp)
+        width: 6rem
+        height: 6rem
+    &__level
+      font-size: 2rem
+      font-weight: bold
+      margin-bottom: .8rem
+      +mq(sp)
+        font-size: 1.6rem
+    &__meter
+      width: 22rem
+      height: 2.4rem
+      border: 1px solid $font-color
+      display: inline-block
+      +mq(sp)
+        height: 2rem
+        width: 20rem
+  &__right

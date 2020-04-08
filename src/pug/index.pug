@@ -61,48 +61,23 @@ html(lang="ja")
         .skill__container
           h2.title Skill
           span.title__line
-          ul.skill__left
-            li.skill__item Html
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 50
-              .skill__item__meter
-            li.skill__item Pug
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 50
-              .skill__item__meter
-            li.skill__item Sass
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel  レベル 50
-              .skill__item__meter
-            li.skill__item Gulp
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 50
-              .skill__item__meter
-          ul.skill__right
-            li.skill__item Bootstrap
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 50
-              .skill__item__meter
-            li.skill__item Ruby on rails
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 40
-              .skill__item__meter
-            li.skill__item React
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel  レベル 20
-              .skill__item__meter
-            li.skill__item JavaScript
-              span.skill__item__name
-              img(src="", alt="")
-              span.skill__item__lebel レベル 20
-              .skill__item__meter
+          ul.skill__wrapper
+            mixin skill__item(name, path, level)
+              li.skill__item
+                .skill__item__icon
+                  .skill__item__name= name
+                  img.skill__item__img(src="img/" + path, alt= name)
+                .skill__item__desc
+                  .skill__item__level レベル #{level}
+                  .skill__item__meter(style="background: linear-gradient(to right, #333333 " + level + "%, #fff " + level + "%)")
+            +skill__item("HTML", "https___cdn.svgporn.com_logos_html-5.svg-0.svg", "50")
+            +skill__item("Pug", "https___cdn.svgporn.com_logos_pug.svg-0.svg", "50")
+            +skill__item("Sass", "https___cdn.svgporn.com_logos_sass2.svg-0.svg", "50")
+            +skill__item("Gulp", "https___cdn.svgporn.com_logos_gulp.svg-0.svg", "50")
+            +skill__item("Bootstrap", "https___cdn.svgporn.com_logos_bootstrap.svg-0.svg", "50")
+            +skill__item("Rails", "https___cdn.svgporn.com_logos_rails2.svg-0.svg", "40")
+            +skill__item("React", "https___cdn.svgporn.com_logos_react2.svg-0.svg", "20")
+            +skill__item("JavaScript", "https___cdn.svgporn.com_logos_javascript.svg-0.svg", "20")
       section.tool
         .tool__container
           h2.title Tool
