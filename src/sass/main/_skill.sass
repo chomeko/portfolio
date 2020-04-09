@@ -1,6 +1,8 @@
 .skill
   &__container
     +inner(769px)
+    &:nth-of-type(2)
+      margin-top: 4rem
   .title
     text-align: center
     font-size: 5rem
@@ -22,11 +24,11 @@
     justify-content: space-between//両端にしてる
     flex-wrap: wrap//改行させる
     align-items: center
-    margin-top: 10.4rem
+    margin-top: 4rem
     +mq(sp)
       display: block
       padding: 2rem 2rem
-      margin-top: 4rem
+      margin-top: 2.4rem
   &__item
     display: flex//iconとdescを横並びにする
     align-items: flex-end//下揃えにする
@@ -37,7 +39,7 @@
     &__icon
       margin-right: 2rem
       +mq(sp)
-        margin-right: 1rem
+        margin-right: 2rem
     &__name
       text-align: center
       margin-bottom: 1.6rem

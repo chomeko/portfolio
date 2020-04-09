@@ -78,32 +78,22 @@ html(lang="ja")
             +skill__item("Rails", "https___cdn.svgporn.com_logos_rails2.svg-0.svg", "40")
             +skill__item("React", "https___cdn.svgporn.com_logos_react2.svg-0.svg", "20")
             +skill__item("JavaScript", "https___cdn.svgporn.com_logos_javascript.svg-0.svg", "20")
-      section.tool
-        .tool__container
-          h2.title Tool
-          span.title__line
-          ul.tool__left
-            li.tool__item VScode
-              span.tool__item__name
-              img(src="", alt="")
-              span.tool__item__lebel レベル 60
-              .tool__item__meter
-            li.tool__item Github
-              span.tool__item__name
-              img(src="", alt="")
-              span.tool__item__lebel レベル 60
-              .tool__item__meter
-          ul.tool__right
-            li.tool__item XD
-              span.tool__item__name
-              img(src="", alt="")
-              span.tool__item__lebel レベル 40
-              .tool__item__meter
-            li.tool__item Slack
-              span.tool__item__name
-              img(src="", alt="")
-              span.tool__item__lebel レベル 60
-              .tool__item__meter
+        .skill__container
+            h2.title Tool
+            span.title__line
+            ul.skill__wrapper
+              mixin skill__item(name, path, level)
+                li.skill__item
+                  .skill__item__icon
+                    .skill__item__name= name
+                    img.skill__item__img(src="img/" + path, alt= name)
+                  .skill__item__desc
+                    .skill__item__level レベル #{level}
+                    .skill__item__meter(style="background: linear-gradient(to right, #333333 " + level + "%, #fff " + level + "%)")
+              +skill__item("Vscode", "file_type_vscode_icon_130084.svg", "50")
+              +skill__item("Github", "github_badge.svg","60")
+              +skill__item("XD", "adobe_xd_folder_icon_133957.svg","40")
+              +skill__item("Slack", "slack-icon.svg","40")
 
       section.study
         .study__container
