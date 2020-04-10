@@ -1,0 +1,63 @@
+.study
+  padding: 0 2rem
+  margin-top: 10rem
+  &__container
+    +inner(769px)
+  .title
+    text-align: center
+    font-size: 5rem
+    margin-bottom: 1.6rem
+    font-weight: normal
+    +mq(sp)
+      font-size: 3rem
+      margin-bottom: 1.6rem
+  .title__line
+    display: block
+    margin: auto
+    width: 16rem
+    height: .1rem
+    background: $yellow
+    +mq(sp)
+      width: 8rem
+  &__wrapper
+    max-width: 51.7rem
+    height: 35.7rem
+    margin: auto
+    margin-top: 8rem
+    background: $yellow
+    border-radius: 2rem
+    box-shadow: 0rem .3rem .3rem $shadow
+    text-align: center
+    padding: 4rem 0
+    +mq(sp)
+      width: 100%
+      height: 100%
+  &__text__top
+    font-size: 2.4rem
+    font-weight: bold
+    //padding-top: 2.4rem
+    +mq(sp)
+      font-size: 1.6rem
+  &__text__middle
+    font-size: 4rem
+    font-weight: bold
+    margin-top: 1.6rem
+    +mq(sp)
+      font-size: 2.4rem
+  &__text__bottom
+    font-size: 1.4rem
+    color: $grey
+    margin-top: 1.6rem
+    line-height: 2
+  .btn__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0px 6px 10px $shadow
+    +btn(20rem,5.6rem)
+    margin: auto
+    margin-top: 4rem
+    //background: $purple
+    &:hover
+      opacity: 1
+      box-shadow: 0rem 0rem .3rem $shadow
