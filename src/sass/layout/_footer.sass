@@ -1,0 +1,21 @@
+.footer
+  width: 100%
+  height: auto
+  //position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  &__topbtn
+    +topbtn
+    position: fixed
+    bottom: 5%
+    right: 2%
+    transform: translate(-2%, -5%)
+    +mq(sp)
+      bottom: 2%
+      right: 2%
+      transform: translate(-2%, -5%)
+  &__copyrite
+    margin-top: 5.6rem
+    font-weight: bold
+    height: 4rem
