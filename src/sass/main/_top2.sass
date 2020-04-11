@@ -1,33 +1,56 @@
-.top
+//.top
+  position: relative
   +mq(sp)
+    z-index: -1
   &__container
     +inner(769px)
     height: 100vh
     +mq(sp)
-      padding: 0 2rem
       height: 56rem
-      margin-bottom: 11rem
   &__title
     font-size: 4rem
     text-align: center
     padding-top: 8rem
     +mq(sp)
-      font-size: 2.4rem
-      padding-top: 6rem
+      font-size: 3rem
   &__wrapper
-    width: 100%
-    height: 64rem
-    margin: auto
-    background-image: url(../img/portfolioMV.png)
-    background-size: contain
-    background-position: 35%
-    position: relative
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
     +mq(sp)
-      background-position: 0 0
       width: 32rem
-      max-width: 100%
-      height: 40rem
-      margin-top: 5.6rem
+      margin: auto
+      position: static
+      top: 0%
+      left: 0%
+      transform: translate(0%, 0%)
+  &__content__box
+    position: relative
+    margin: auto
+    margin-top: 5.6rem
+    width: 40rem
+    height: 50rem
+    +mq(sp)
+      width: 100%
+      margin-top: 3rem
+  img
+    position: absolute
+    top: 42%
+    left: 0%
+    transform: translate(0%, -42%)
+    object-fit: contain
+    width: 22rem
+    height: 48rem
+    +mq(sp)
+      position: static
+      top: 0
+      left: 0
+      transform: translate(0%, 0%)
+      width: auto
+      height: auto
+      margin-left: 1rem
+      margin-top: 1rem
   &__comment
     text-align: center
     width: 18rem
@@ -39,14 +62,9 @@
     align-items: center
     justify-content: center
     position: absolute
-    top: 8%
-    left: 65%
-    transform: translate(-65%, -8%)
-    +mq(sp)
-      width: 16rem
-      top: 0%
-      left: 100%
-      transform: translate(-100%, 0%)
+    top: 0
+    left: 80%
+    transform: translate(-80%, 0%)
     p
       position: relative
     &::before,&::after
@@ -69,13 +87,13 @@
     font-size: 1.4rem
     font-weight: bold
     position: absolute
-    top: 65%
-    right: 20%
-    transform: translate(-20%, -65%)
+    top: 75%
+    right: 0%
+    transform: translate(0%, -75%)
     +mq(sp)
-      top: 60%
+      top: 30%
       right: 0%
-      transform: translate(0%, -60%)
+      transform: translate(0%, -30%)
     dl
       display: flex
       justify-content: flex-end
