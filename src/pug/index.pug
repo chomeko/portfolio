@@ -14,13 +14,13 @@ html(lang="ja")
       nav.header__nav
         ul.header__list
           li.header__list__item
-            a(href="#") Skill
+            a(href="#skill") Skill
           li.header__list__item
-            a(href="#") Study
+            a(href="#study") Study
           li.header__list__item
-            a(href="#") Production
+            a(href="#production") Production
           li.header__list__item
-            a(href="#") Contact
+            a(href="#contact") Contact
       .header__links
         a(href="#")
           span.twitter
@@ -56,7 +56,7 @@ html(lang="ja")
                   dt
                   dd 独学１年目
 
-      section.skill
+      section.skill#skill
         .skill__container
           h2.title Skill
           span.title__line
@@ -94,7 +94,7 @@ html(lang="ja")
               +skill__item("XD", "adobe_xd_folder_icon_133957.svg","40")
               +skill__item("Slack", "slack-icon.svg","40")
 
-      section.study
+      section.study#study
         .study__container
           h2.title Study record
           span.title__line
@@ -108,7 +108,7 @@ html(lang="ja")
             a.btn__wrapper(href="#")
               p 勉強記録を見る
 
-      section.production
+      section.production#production
         .production__container
           h2.title Production
           span.title__line
@@ -152,7 +152,7 @@ html(lang="ja")
                   .production__item__img
                     img(src=`${item.path}`, alt= `${title}`)
 
-      section.contact
+      section.contact#contact
         .contact__container
           .contact__wrapper
             h2.title contact
