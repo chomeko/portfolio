@@ -1,0 +1,82 @@
+.production
+  margin-top: 12rem
+  &__container
+    +inner(769px)
+  .title
+    text-align: center
+    font-size: 5rem
+    margin-bottom: 1.6rem
+    font-weight: normal
+    +mq(sp)
+      font-size: 3rem
+  .title__line
+    display: block
+    margin: auto
+    width: 16rem
+    height: .1rem
+    background: $yellow
+    +mq(sp)
+      width: 8rem
+  &__wrapper
+    margin-top: 4rem
+    +mq(sp)
+      padding: 0 2rem
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +mq(sp)
+      display: block
+  &__item
+    margin-bottom: 4.8rem
+    &__img
+      width: 32rem
+      height: 35rem
+      +mq(sp)
+        width: 100%
+        max-width: 32rem
+        height: 100%
+        margin: auto
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: top
+        box-shadow: 5px 9px 10px $shadow
+        +mq(sp)
+          max-width: 100%
+          height: 40rem
+          object-fit: cover
+    /* 3番目のLiはセンター */
+    &:nth-child(3)
+      margin: auto
+      margin-bottom: 4.8rem
+    /* 4番目以降のLiの画像はwidth:100%にする */
+    &:nth-child(n+4)
+      .production__item__img
+        width: 100%
+        height: auto
+        +mq(sp)
+          max-width: 51.7rem
+    &__title
+      text-align: center
+      font-size: 2.4rem
+      font-weight: bold
+      margin-bottom: 1.4rem
+    &__text
+      margin: auto
+      font-size: 1.4rem
+      color: $grey
+      width: 32rem
+      height: 6.3rem
+      +mq(sp)
+        max-width: 100%
+        height: auto
+    .btn-wrapper
+      text-align: center
+      margin-bottom: 1.4rem
+      a
+        font-size: 1.4rem
+        font-weight: bold
+        background: $yellow
+        border-radius: 1rem

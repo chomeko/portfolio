@@ -57,6 +57,7 @@ html(lang="ja")
                 dl
                   dt
                   dd 独学１年目
+
       section.skill
         .skill__container
           h2.title Skill
@@ -106,69 +107,53 @@ html(lang="ja")
               | プログラミング勉強を始めてから自分が何を
               br
               | してきたかを簡単にまとめました
-            a.btn__wrapper(href="")
+            a.btn__wrapper(href="#")
               p 勉強記録を見る
+
       section.production
         .production__container
           h2.title Production
           span.title__line
           .production__wrapper
+            -
+              var arr = [
+                {
+                  'title': 'Calculator',
+                  'path': 'img/calculator.png',
+                  'tex': 'Ruby on railsをProgateで勉強し１ヶ月後に初めて作った作品になります。現職で使える計算機です'
+                },
+                {
+                  'title': 'PGMG',
+                  'path': 'img/pgmg.png',
+                  'tex': 'Ruby on railsチュートリアル後に作成したブログサイトになります。勉強したことを記事にしてます'
+                },
+                {
+                  'title': 'デイトラ2nd',
+                  'path': 'img/daytry.png',
+                  'tex': 'Html＆cssの理解を深めるために、はにわさんのデイトラ2ndをやりました。gulp,pug,sassを使って初めてコーディングしてます'
+                },
+                {
+                  'title': 'Bell',
+                  'path': 'img/bell.png',
+                  'tex': 'Reactに興味を持ち勉強後、twitterの1週間企画に参加して初めてReactで作成しました。Redux,persist,firebaseで作りました'
+                },
+                {
+                  'title': 'Portfolio',
+                  'path': 'img/portfolio.png',
+                  'tex': '就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています'
+                },
+              ];
             ul.production__list
-              li.production__item
-                p.production__item__title calculator
-                p.production__item__text
-                  | Ruby on railsをProgateで勉強し１ヶ月後に初めて
-                  br
-                  | 作った作品になります。
-                  br
-                  | 現職で使える計算機です…
-                  a(href="")
-                    |もっと見る
-                img
-              li.production__item
-                p.production__item__title PGMG
-                p.production__item__text
-                  | Ruby on railsチュートリアル後に作成したブログ
-                  br
-                  | サイトになります。
-                  br
-                  | 勉強したことを記事にしてます…
-                  a(href="")
-                    | もっと見る
-                img
-              li.production__item
-                p.production__item__title デイトラ2nd
-                p.production__item__text
-                  | Html＆cssの理解を深めるために、はにわさんの
-                  br
-                  | デイトラ2ndをやりました。gulp,pug,sassを使って
-                  br
-                  | 初めてコーディングしてます…
-                  a(href="")
-                    | もっと見る
-                img
-              li.production__item
-                p.production__item__title Bell
-                p.production__item__text
-                | Reactに興味を持ち勉強後、twitterの1週間企画
-                br
-                | に参加して初めてReactで作成しました。
-                br
-                | Redux,persist,firebaseで作りました…
-                a(href="")
-                  |もっと見る
-                img
-              li.production__item
-                p.production__item__title portfolio
-                p.production__item__text
-                  | 就職活動をするためポートフォリオの作成をしました。
-                  br
-                  | XDで自分でデザインをし、gulp,pug,sassでコーディング
-                  br
-                  | しています…
-                  a(href="")
-                    | もっと見る
-                img
+              each item in arr
+                li.production__item
+                  p.production__item__title !{item.title}
+                  p.production__item__text !{item.tex}
+                    .btn-wrapper
+                      a(href="#")
+                        | もっと見る
+                  .production__item__img
+                    img(src=`${item.path}`, alt= `${title}`)
+
       section.contact
         .contact__container
           .contact__wrapper
@@ -178,7 +163,7 @@ html(lang="ja")
               input(id="name" name="name" type="text" placeholder="Name")
               input(id="email" name="email" type="text" placeholder="Email")
               textarea(id="commet" name="commet", cols="30", rows="10")
-              a.btn(href="")
+              a.btn(href="#")
                 p submit
     footer.footer
       .footer__copyrite
