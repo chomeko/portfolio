@@ -1,0 +1,58 @@
+.contact
+  margin-top: 12rem
+  &__container
+    +inner(76.9rem)
+    +mq(sp)
+      padding: 0 2rem
+  &__wrapper
+    width: 56rem
+    margin: auto
+    box-shadow: 0px 4px 10px $shadow
+    border-radius: 2rem
+    padding: 2.4rem 0rem
+    +mq(sp)
+      max-width: 100%
+  .title
+    text-align: center
+    font-size: 5rem
+    margin-bottom: 1.6rem
+    font-weight: normal
+    +mq(sp)
+      font-size: 3rem
+      margin-bottom: 1.6rem
+  .title__line
+    display: block
+    margin: auto
+    width: 16rem
+    height: .1rem
+    background: $yellow
+    +mq(sp)
+      width: 8rem
+  form
+    text-align: center
+    margin-top: 4.8rem
+    +mq(sp)
+      padding: 0 2rem
+    input,textarea
+      width: 40rem
+      border: 1px solid $font-color
+      border-radius: 1rem
+      margin-bottom: 4.8rem
+      +mq(sp)
+        max-width: 100%
+    input
+      height: 3.2rem
+      &::placeholder
+        padding-left: 1rem
+    textarea
+      height: 20rem
+    .btn
+      +btn(20rem, 5.6rem)
+      margin: auto
+      display: flex
+      align-items: center
+      justify-content: center
+      box-shadow: 0rem .6rem 1rem $shadow
+      &:hover
+        opacity: 1
+        box-shadow: 0rem 0rem .3rem $shadow
