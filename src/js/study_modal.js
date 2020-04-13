@@ -5,11 +5,11 @@ $(function () {
     //クリックした位置を取得
     winScrollTop = $(window).scrollTop();
     //モーダル出現
-    $('.modal').fadeIn();
+    $('.study__modal').fadeIn();
   });
-  $('.modal__close').click(function () {
+  $('.study__modal__close').click(function () {
     //モーダル消す
-    $('.modal').fadeOut();
+    $('.study__modal').fadeOut();
     //モーダルをクリックした位置に戻す
     $('body,html').stop().animate({ scrollTop: winScrollTop }, 100);
   });
