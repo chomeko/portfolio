@@ -100,81 +100,103 @@ html(lang="ja")
       section.study#study
         .study__container
           .modal
-            .modal__title 平成30年3月24日プログラミング勉強開始
-            .modal__line
-            table
-              dl
-                dt 3月24日
-                dd progateでHtml&css,Ruby,Ruby on Railを学ぶ
-              dl
-                dt 5月4日
-                dd 現在の仕事で使う計算機を開発する
-              dl
-                dt 5月30日
-                dd 5月30日Railsチュートリアルを２週完了
-              dl
-                dt 5月31日
-                dd 現場で使えるRuby on rails5速習実践ガイド（書籍）で勉強する
-              dl
-                dt 7月1日
-                dd Ruby on railsでブログサイトを制作開始する
-              dl
-                dt 8月19日
-                dd
-                  | 8月19日にブログサイトPGMGの完成
-                  br
-                  | さくらのVPSにcentos7+Apache+puma+mysqlcapistranoで デプロイしています。
-              dl
-                dt 9月8日
-                dd
-                  | Google Adsenseに合格する
-                  br
-                  | 微々たるものだけどここで初めて自分の制作したもので収益がでる。
-                  br
-              dl
-                dt 11月29日
-                dd ブログのデザインを変更する
-              dl
-                dt 11月30日
-                dd
-                  | gulp,sass,emmetを使ってフロント側の強化開始
-                  br
-                  | 書籍をgulp,sass,emmetに書き換えて勉強してみる
-                  br
-                  | deploy先をnetlifyにして簡単にデプロイできて感動する。
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
-              dl
-                dt
-                dd
+            .modal__bg
+            .modal__wrapper
+              h2.modal__title
+                | 平成30年3月24日
+                br
+                | プログラミング勉強開始
+                .modal__line
+              .modal__table
+                dl
+                  dt 3月24日
+                  dd progateでHtml&css,Ruby,Ruby on Railを学ぶ
+                dl
+                  dt 5月4日
+                  dd 現在の仕事で使う計算機を開発する
+                dl
+                  dt 5月30日
+                  dd 5月30日Railsチュートリアルを２週完了
+                dl
+                  dt 5月31日
+                  dd 現場で使えるRuby on rails5速習実践ガイド（書籍）で勉強する
+                dl
+                  dt 7月1日
+                  dd Ruby on railsでブログサイトを制作開始する
+                dl
+                  dt 8月19日
+                  dd
+                    | 8月19日にブログサイトPGMGの完成
+                    br
+                    | さくらのVPSにcentos7+Apache+puma+mysqlcapistranoで デプロイしています。
+                dl
+                  dt 9月8日
+                  dd
+                    | Google Adsenseに合格する
+                    br
+                    | 微々たるものだけどここで初めて自分の制作したもので収益がでる。
+                    br
+                dl
+                  dt 11月29日
+                  dd ブログのデザインを変更する
+                dl
+                  dt 11月30日
+                  dd
+                    | gulp,sass,emmetを使ってフロント側の強化開始
+                    br
+                    | 書籍をgulp,sass,emmetに書き換えて勉強してみる
+                    br
+                    | deploy先をnetlifyにして簡単にデプロイできて感動する。
+                dl
+                  dt 12月18日
+                  dd デイトラ２nd(はにわまん)を始める
+                dl
+                  dt 2月8日
+                  dd デイトラ最終課題終了
+                dl
+                  dt 2月11日
+                  dd progateでreact勉強開始
+                dl
+                  dt 2月14日
+                  dd reactチュートリアル開始
+                dl
+                  dt 2月15日
+                  dd reactチュートリアル２週終了
+                dl
+                  dt 2月18日
+                  dd 書籍で勉強開始(React.js&Next.js超入門 )
+                dl
+                  dt 3月10日
+                  dd Twitterで１週間で製作物を作る企画１週間チャレンジに参加
+                dl
+                  dt 3月15日
+                  dd React+Redux+Firebaseでいいねボタンを作成
+                dl
+                  dt 3月21日
+                  dd
+                    | Reactを覚える予定だったが、現職で（製造業）突然の部署移動になってしまい転職を決意、 一旦Reactは保留。 コーディング力を今より伸ばす方向に勉強方法を変更する。
+                dl
+                  dt 3月22日
+                  dd
+                    | MENTAにてメンターと契約
+                    br
+                    | メンターの指示で自分でサイトを探し模写スタート
+                dl
+                  dt 3月29日
+                  dd
+                    | 模写完成
+                    br
+                    | ポートフォリオの製作開始
+                    br
+                    | ワイヤーフレームをXDで作成開始
+                dl
+                  dt 4月5日
+                  dd デザインカンプ完成
+                dl
+                  dt 4月6日
+                  dd portfolioのコーディング開始
+              .modal__close 戻る
+
           h2.title Study record
           span.title__line
           .study__wrapper
@@ -184,7 +206,7 @@ html(lang="ja")
               | プログラミング勉強を始めてから自分が何を
               br
               | してきたかを簡単にまとめました
-            a.btn__wrapper(href="#")
+            .btn__wrapper
               p 勉強記録を見る
 
       section.production#production
@@ -252,3 +274,4 @@ html(lang="ja")
     script(src="js/toggle.min.js")
     script(src="js/topbtn.min.js")
     script(src="js/comment.min.js")
+    script(src="js/study_modal.min.js")
