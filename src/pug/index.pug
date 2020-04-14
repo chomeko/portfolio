@@ -99,18 +99,18 @@ html(lang="ja")
 
       section.study#study
         .study__container
-          .modal
-            .modal__bg
-            .modal__wrapper
+          .study__modal
+            .study__modal__bg
+            .study__modal__wrapper
               h2.modal__title
                 | 平成30年3月24日
                 br
                 | プログラミング勉強開始
                 .modal__line
-              .modal__table
+              .study__modal__table
                 dl
                   dt 3月24日
-                  dd progateでHtml&css,Ruby,Ruby on Railを学ぶ
+                  dd progateでHtml&amp;css,Ruby,Ruby on Railを学ぶ
                 dl
                   dt 5月4日
                   dd 現在の仕事で使う計算機を開発する
@@ -164,7 +164,7 @@ html(lang="ja")
                   dd reactチュートリアル２週終了
                 dl
                   dt 2月18日
-                  dd 書籍で勉強開始(React.js&Next.js超入門 )
+                  dd 書籍で勉強開始(React.js&amp;Next.js超入門 )
                 dl
                   dt 3月10日
                   dd Twitterで１週間で製作物を作る企画１週間チャレンジに参加
@@ -195,7 +195,7 @@ html(lang="ja")
                 dl
                   dt 4月6日
                   dd portfolioのコーディング開始
-              .modal__close 戻る
+              .study__modal__close 戻る
 
           h2.title Study record
           span.title__line
@@ -217,41 +217,105 @@ html(lang="ja")
             -
               var arr = [
                 {
+                  'modal': '1',
                   'title': 'Calculator',
                   'path': 'img/calculator.png',
-                  'tex': 'Ruby on railsをProgateで勉強し１ヶ月後に初めて作った作品になります。現職で使える計算機です'
+                  'tex': 'Ruby on railsをProgateで勉強し１ヶ月後に初めて作った作品になります。現職で使える計算機です',
+                  'github': '',
+                  'url': '',
+                  'code': 'Ruby on Rails',
+                  'days': '15日',
+                  'deploy': 'heroku',
+                  'desc': 'progateでHtml&cssとRuby on railsの勉強して、プログラミング勉強１ヶ月後に初めて作成してみた計算機になります。 1ヶ月の勉強な為コードの方は相当ひどいですが、初めての作品なので修正せずそのまま残してます。現職の仕事で、プラスチックの製品を機械で作っています。プラスチック成形で、予定の生産数が何時に作り終わるかを計算し、終了時間に合わせて次の段取りの準備に取りかかれる。 普段は電卓を使って計算し、時計を見て終了時間を出していたため計算が大変＆手間だったので、サクッと終了時間を計算できる物を作ろうと思ったのがきっかけです。'
                 },
                 {
+                  'modal': '2',
                   'title': 'PGMG',
                   'path': 'img/pgmg.png',
-                  'tex': 'Ruby on railsチュートリアル後に作成したブログサイトになります。勉強したことを記事にしてます'
+                  'tex': 'Ruby on railsチュートリアル後に作成したブログサイトになります。勉強したことを記事にしてます',
+                  'github': '',
+                  'url': '',
+                  'code': ' Ruby on Rails Bootstrap',
+                  'days': '1ヶ月19日',
+                  'deploy': 'さくらのVPS<br>centos7<br>Apache<br>puma<br>mysql<br>capistrano',
+                  'desc': 'こちらはプログラミング勉強を始めて約３ヶ月後に作成したブログサイトになります。Railsチュートリアルを２周した後に作りました。Boostrapを使ってコーディングをして、Rails6からあるactiontextを使ってブログ機能を作成し、さくらのVPSとドメインも契約し、capistranoを使ったデプロイをしています。サーバーサイドで苦戦したのはもちろん、コーディングでも悩むことが多く、この頃からもっとコーディングに力を入れたいなと思うようになりました。またGoogle AdSenseにも申請し、収益化にも挑戦しました。'
                 },
                 {
+                  'modal': '3',
                   'title': 'デイトラ2nd',
                   'path': 'img/daytry.png',
-                  'tex': 'Html＆cssの理解を深めるために、はにわさんのデイトラ2ndをやりました。gulp,pug,sassを使って初めてコーディングしてます'
+                  'tex': 'Html＆cssの理解を深めるために、はにわさんのデイトラ2ndをやりました。gulp,pug,sassを使って初めてコーディングしてます',
+                  'github': '',
+                  'url': '',
+                  'code': 'Pug Sass Gulp',
+                  'days': '２ヶ月',
+                  'deploy': 'なし',
+                  'desc': 'こちらはコーディング力を上げるために挑戦した、はにわマンさんの30DAYSトライアルになります。Bootstrapじゃなくて自分で１からCSSを書いてみたい、コーディングの速さを身に付けたいという思いから始めました。Gulpによる自動化をして、PugとSassを使ったコーディングにも挑戦しました。また、emmetも使ってsassやpugを書くことでスピードも上がったと思います。jqueryにも始めて挑戦し、動きのあるサイトも作れるようになりました。  この頃からフロントエンドエンジニアになりたいと思うようにもなりました。'
                 },
                 {
+                  'modal': '4',
                   'title': 'Bell',
                   'path': 'img/bell.png',
-                  'tex': 'Reactに興味を持ち勉強後、twitterの1週間企画に参加して初めてReactで作成しました。Redux,persist,firebaseで作りました'
+                  'tex': 'Reactに興味を持ち勉強後、twitterの1週間企画に参加して初めてReactで作成しました。Redux,persist,firebaseで作りました',
+                  'github': '',
+                  'url': '',
+                  'code': 'React Redux Firebase',
+                  'days': '6日',
+                  'deploy': 'Firebase',
+                  'desc': 'こちらはprorateとチュートリアルと書籍でReactを勉強した後に作ったいいねボタンになります。Twitterにて１週間でお題に沿ったテーマで制作するという企画があったので、参加して６日間で作りました。訪問してくれた人がボタンを押すことでカウントをしていくボタンです。再訪問時やリロード時に初期化しないように、ローカルストレージにはボタンを押したかの状態を保持させて、カウントにはFirebaseのデーターベースに値を保存して呼び出しています。１週間という決まった期間内に作成し投稿までできたので、納期に近いものが体験でき、Reactの勉強にもすごくなった作品です。  '
                 },
                 {
+                  'modal': '5',
                   'title': 'Portfolio',
                   'path': 'img/portfolio.png',
-                  'tex': '就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています'
+                  'tex': '就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています',
+                  'github': '',
+                  'url': '',
+                  'code': 'Gulp Pug Sass',
+                  'days': '未定',
+                  'deploy': 'Netlify',
+                  'desc': 'こちらは転職活動用に作った僕のポートフォリオになります。'
                 },
               ];
             ul.production__list
+              //eachで回す
               each item in arr
                 li.production__item
                   p.production__item__title !{item.title}
                   p.production__item__text !{item.tex}
-                    .btn-wrapper
-                      a(href="#")
-                        | もっと見る
+                  //複数のモーダルに対応するためdata-target属性を与える
+                  .btn-wrapper(data-target= "modal" + `${item.modal}`)
+                    | もっと見る
                   .production__item__img
-                    img(src=`${item.path}`, alt= `${title}`)
+                    img(src=`${item.path}`, alt= `${item.title}`)
+                  //各モーダルにidをつけて、紐づける
+                  .production__modal(id= "modal"+ `${item.modal}`)
+                    .production__modal__bg
+                    .production__modal__wrapper
+                      h2.production__modal__title !{item.title}
+                      .production__modal__items
+                        .production__modal__items__box
+                          p GitHub
+                          .modal__item
+                            a.github(href=`${item.github}`)
+                        .production__modal__items__box
+                          p URL
+                          .modal__item
+                            a.url(href=`${item.url}`) サイト
+                      .production__modal__table
+                        dl
+                          dt 構成:
+                          dd !{item.code}
+                        dl
+                          dt デプロイ:
+                          dd !{item.deploy}
+                        dl
+                          dt 制作日数:
+                          dd !{item.days}
+                      .production__modal__text !{item.desc}
+                      .modal__close 戻る
+
+
 
       section.contact#contact
         .contact__container
@@ -275,3 +339,4 @@ html(lang="ja")
     script(src="js/topbtn.min.js")
     script(src="js/comment.min.js")
     script(src="js/study_modal.min.js")
+    script(src="js/product_modal.min.js")
