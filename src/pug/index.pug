@@ -33,31 +33,31 @@ html(lang="ja")
     main
       section.top
         .top__container
-          h1.top__title Chomeko`s Portfolio
-            .top__wrapper
-              .top__comment
-              .top__table
-                dl
-                  dt 年齢 :
-                  dd 31
-                dl
-                  dt 身長 :
-                  dd 168cm
-                dl
-                  dt 誕生日 :
-                  dd s64.1.1
-                dl
-                  dt 住所 :
-                  dd 愛知県名古屋市
-                dl
-                  dt 趣味 :
-                  dd GameとAnime
-                dl
-                  dt
-                  dd 実務経験なし
-                dl
-                  dt
-                  dd 独学１年目
+          h1.top__title#top__title--js Chomeko`s Portfolio
+          .top__wrapper
+            .top__comment
+            .top__table
+              dl
+                dt 年齢 :
+                dd 31
+              dl
+                dt 身長 :
+                dd 168cm
+              dl
+                dt 誕生日 :
+                dd s64.1.1
+              dl
+                dt 住所 :
+                dd 愛知県名古屋市
+              dl
+                dt 趣味 :
+                dd GameとAnime
+              dl
+                dt
+                dd 実務経験なし
+              dl
+                dt
+                dd 独学１年目
 
       section.skill#skill
         .skill__container
@@ -221,8 +221,8 @@ html(lang="ja")
                   'title': 'Calculator',
                   'path': 'img/calculator.png',
                   'tex': 'Ruby on railsをProgateで勉強し１ヶ月後に初めて作った作品になります。現職で使える計算機です',
-                  'github': '',
-                  'url': '',
+                  'github': 'https://github.com/chomeko/my_calculator',
+                  'url': 'https://keisanki.herokuapp.com/',
                   'code': 'Ruby on Rails',
                   'days': '15日',
                   'deploy': 'heroku',
@@ -233,8 +233,8 @@ html(lang="ja")
                   'title': 'PGMG',
                   'path': 'img/pgmg.png',
                   'tex': 'Ruby on railsチュートリアル後に作成したブログサイトになります。勉強したことを記事にしてます',
-                  'github': '',
-                  'url': '',
+                  'github': 'https://github.com/chomeko/PGMG',
+                  'url': 'https://pgmg-rails.com/',
                   'code': ' Ruby on Rails Bootstrap',
                   'days': '1ヶ月19日',
                   'deploy': 'さくらのVPS<br>centos7<br>Apache<br>puma<br>mysql<br>capistrano',
@@ -245,7 +245,7 @@ html(lang="ja")
                   'title': 'デイトラ2nd',
                   'path': 'img/daytry.png',
                   'tex': 'Html＆cssの理解を深めるために、はにわさんのデイトラ2ndをやりました。gulp,pug,sassを使って初めてコーディングしてます',
-                  'github': '',
+                  'github': 'https://github.com/chomeko/30day_lastday',
                   'url': '',
                   'code': 'Pug Sass Gulp',
                   'days': '２ヶ月',
@@ -257,8 +257,8 @@ html(lang="ja")
                   'title': 'Bell',
                   'path': 'img/bell.png',
                   'tex': 'Reactに興味を持ち勉強後、twitterの1週間企画に参加して初めてReactで作成しました。Redux,persist,firebaseで作りました',
-                  'github': '',
-                  'url': '',
+                  'github': 'https://github.com/chomeko/Bell',
+                  'url': 'https://chomeko-test-app.firebaseapp.com/',
                   'code': 'React Redux Firebase',
                   'days': '6日',
                   'deploy': 'Firebase',
@@ -269,7 +269,7 @@ html(lang="ja")
                   'title': 'Portfolio',
                   'path': 'img/portfolio.png',
                   'tex': '就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています',
-                  'github': '',
+                  'github': 'https://github.com/chomeko/portfolio',
                   'url': '',
                   'code': 'Gulp Pug Sass',
                   'days': '未定',
@@ -297,11 +297,11 @@ html(lang="ja")
                         .production__modal__items__box
                           p GitHub
                           .modal__item
-                            a.github(href=`${item.github}`)
+                            a.github(href=`${item.github}` target="_blank")
                         .production__modal__items__box
                           p URL
                           .modal__item
-                            a.url(href=`${item.url}`) サイト
+                            a.url(href=`${item.url}` target="_blank") サイト
                       .production__modal__table
                         dl
                           dt 構成:
@@ -322,11 +322,15 @@ html(lang="ja")
           .contact__wrapper
             h2.title contact
             span.title__line
-            form
-              input(id="name" name="name" type="text" placeholder="Name")
-              input(id="email" name="email" type="text" placeholder="Email")
-              textarea(id="commet" name="commet", cols="30", rows="10")
-              a.btn(id="submit" name="submit" type="submit")
+            p.title__comment
+              | ※googleフォームを使用しています。
+              br
+              | 送信後googleフォームへ遷移します。
+            form(id= "my_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFZVDY4xZWi-zJLF2KlP2BdOsCQQudUHTTWpWZk3ahcb1wTg/formResponse")
+              input(id="name" name="entry.1923202485" type="text" placeholder="Name")
+              input(id="email" name="entry.558236404" type="text" placeholder="Email" required)
+              textarea(id="commet" name="entry.1114625651", cols="30", rows="10")
+              button.btn(id="submit" type="submit")
                 p submit
     footer.footer
       .footer__topbtn
@@ -340,3 +344,4 @@ html(lang="ja")
     script(src="js/comment.min.js")
     script(src="js/study_modal.min.js")
     script(src="js/product_modal.min.js")
+    script(src="js/title.animate.min.js")

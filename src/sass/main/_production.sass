@@ -53,6 +53,12 @@
     &:nth-child(3)
       margin: auto
       margin-bottom: 4.8rem
+      //3番目のliのURLはないので非表示にしてGitHubをセンターにする
+      .production__modal__items
+        justify-content: center
+      .production__modal__items__box
+        &:nth-of-type(2)
+          display: none
     /* 4番目以降のLiの画像はwidth:100%にする */
     &:nth-child(n+4)
       .production__item__img
@@ -86,6 +92,7 @@
       transition: all .3s
       &:hover
         background: $bg-color
+  
   &__modal
     display: none
     width: 100%

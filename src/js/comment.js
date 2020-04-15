@@ -12,7 +12,7 @@ $(function () {
       setTimeout(function () {
         console.log(text[pram]);
         $('.top__comment').html(text[pram]);
-      }, pram * 2000);
+      }, pram * 3000);
     })(i);
   }
 });
