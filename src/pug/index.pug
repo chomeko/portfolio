@@ -323,13 +323,10 @@ html(lang="ja")
             h2.title contact
             span.title__line
             p.title__comment
-              | ※googleフォームを使用しています。
-              br
-              | 送信後googleフォームへ遷移します。
-            form(id= "my_form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeFZVDY4xZWi-zJLF2KlP2BdOsCQQudUHTTWpWZk3ahcb1wTg/formResponse")
-              input(id="name" name="entry.1923202485" type="text" placeholder="Name")
-              input(id="email" name="entry.558236404" type="text" placeholder="Email" required)
-              textarea(id="commet" name="entry.1114625651", cols="30", rows="10")
+            form( name="contact" method="POST" netlify)
+              input(name="name" type="text" placeholder="Name")
+              input(name="email" type="text" placeholder="Email" required)
+              textarea(name="message", cols="30", rows="10")
               button.btn(id="submit" type="submit")
                 p submit
     footer.footer
