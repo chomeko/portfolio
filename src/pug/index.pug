@@ -323,12 +323,13 @@ html(lang="ja")
             h2.title contact
             span.title__line
             p.title__comment
-            form( name="contact" method="POST" action="/message.html" netlify)
+            form(name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/message")
               input(name="name" type="text" placeholder="Name")
               input(name="email" type="text" placeholder="Email" required)
               textarea(name="message", cols="30", rows="10")
               button.btn(id="submit" type="submit")
                 p submit
+
     footer.footer
       .footer__topbtn
       .footer__copyrite
