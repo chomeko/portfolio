@@ -1,0 +1,26 @@
+.message
+  width: 76.9rem
+  margin: auto
+  height: 100vh
+  position: relative
+  &__wrapper
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    p
+      text-align: center
+      font-size: 1.6rem
+      font-weight: bold
+  .back__home__btn
+    +btn(20rem, 5.6rem)
+    margin-top: 4rem
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0rem .6rem 1rem $shadow
+    cursor: pointer
+    &:hover
+      opacity: 1
+      box-shadow: 0rem 0rem .3rem $shadow
