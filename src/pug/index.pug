@@ -191,31 +191,7 @@ html(lang="ja")
                   .production__item__img
                     img(src=`${item.path}`, alt= `${item.title}`)
                   //各モーダルにidをつけて、紐づける
-                  .production__modal(id= "modal"+ `${item.modal}`)
-                    .production__modal__bg
-                    .production__modal__wrapper
-                      h2.production__modal__title !{item.title}
-                      .production__modal__items
-                        .production__modal__items__box
-                          p GitHub
-                          .modal__item
-                            a.github(href=`${item.github}` target="_blank")
-                        .production__modal__items__box
-                          p URL
-                          .modal__item
-                            a.url(href=`${item.url}` target="_blank") サイト
-                      .production__modal__table
-                        dl
-                          dt 構成:
-                          dd !{item.code}
-                        dl
-                          dt デプロイ:
-                          dd !{item.deploy}
-                        dl
-                          dt 制作日数:
-                          dd !{item.days}
-                      .production__modal__text !{item.desc}
-                      .modal__close 戻る
+
 
 
 
@@ -237,6 +213,7 @@ html(lang="ja")
       .footer__copyrite
         small ©️chomeko portfolio
     // モーダル置き場
+    //studyモーダル
     .study__modal
       .study__modal__bg
       .study__modal__wrapper
@@ -334,6 +311,76 @@ html(lang="ja")
             dt 4月6日
             dd portfolioのコーディング開始
         .study__modal__close 戻る
+    // productモーダル
+    -
+      var arr = [
+        { 'modal': '1',
+          'github': 'https://github.com/chomeko/my_calculator',
+          'url': 'https://keisanki.herokuapp.com/',
+          'code': 'Ruby on Rails',
+          'days': '15日',
+          'deploy': 'heroku',
+          'desc': 'progateでHtml&cssとRuby on railsの勉強して、プログラミング勉強１ヶ月後に初めて作成してみた計算機になります。 1ヶ月の勉強な為コードの方は相当ひどいですが、初めての作品なので修正せずそのまま残してます。現職の仕事で、プラスチックの製品を機械で作っています。プラスチック成形で、予定の生産数が何時に作り終わるかを計算し、終了時間に合わせて次の段取りの準備に取りかかれる。 普段は電卓を使って計算し、時計を見て終了時間を出していたため計算が大変＆手間だったので、サクッと終了時間を計算できる物を作ろうと思ったのがきっかけです。'
+        },
+        {'modal': '2',
+          'github': 'https://github.com/chomeko/PGMG',
+          'url': 'https://pgmg-rails.com/',
+          'code': ' Ruby on Rails Bootstrap',
+          'days': '1ヶ月19日',
+          'deploy': 'さくらのVPS<br>centos7<br>Apache<br>puma<br>mysql<br>capistrano',
+          'desc': 'こちらはプログラミング勉強を始めて約３ヶ月後に作成したブログサイトになります。Railsチュートリアルを２周した後に作りました。Boostrapを使ってコーディングをして、Rails6からあるactiontextを使ってブログ機能を作成し、さくらのVPSとドメインも契約し、capistranoを使ったデプロイをしています。サーバーサイドで苦戦したのはもちろん、コーディングでも悩むことが多く、この頃からもっとコーディングに力を入れたいなと思うようになりました。またGoogle AdSenseにも申請し、収益化にも挑戦しました。'
+        },
+        {'modal': '3',
+          'github': 'https://github.com/chomeko/30day_lastday',
+          'url': '',
+          'code': 'Pug Sass Gulp',
+          'days': '２ヶ月',
+          'deploy': 'なし',
+          'desc': 'こちらはコーディング力を上げるために挑戦した、はにわマンさんの30DAYSトライアルになります。Bootstrapじゃなくて自分で１からCSSを書いてみたい、コーディングの速さを身に付けたいという思いから始めました。Gulpによる自動化をして、PugとSassを使ったコーディングにも挑戦しました。また、emmetも使ってsassやpugを書くことでスピードも上がったと思います。jqueryにも始めて挑戦し、動きのあるサイトも作れるようになりました。  この頃からフロントエンドエンジニアになりたいと思うようにもなりました。'
+        },
+        {'modal': '4',
+          'github': 'https://github.com/chomeko/Bell',
+          'url': 'https://chomeko-test-app.firebaseapp.com/',
+          'code': 'React Redux Firebase',
+          'days': '6日',
+          'deploy': 'Firebase',
+          'desc': 'こちらはprorateとチュートリアルと書籍でReactを勉強した後に作ったいいねボタンになります。Twitterにて１週間でお題に沿ったテーマで制作するという企画があったので、参加して６日間で作りました。訪問してくれた人がボタンを押すことでカウントをしていくボタンです。再訪問時やリロード時に初期化しないように、ローカルストレージにはボタンを押したかの状態を保持させて、カウントにはFirebaseのデーターベースに値を保存して呼び出しています。１週間という決まった期間内に作成し投稿までできたので、納期に近いものが体験でき、Reactの勉強にもすごくなった作品です。  '
+        },
+        {'modal': '5',
+          'github': 'https://github.com/chomeko/portfolio',
+          'url': '',
+          'code': 'Gulp Pug Sass',
+          'days': '未定',
+          'deploy': 'Netlify',
+          'desc': 'こちらは転職活動用に作った僕のポートフォリオになります。'
+        },
+      ];
+    each item in arr
+      .production__modal(id= "modal"+ `${item.modal}`)
+        .production__modal__bg
+        .production__modal__wrapper
+          h2.production__modal__title !{item.title}
+          .production__modal__items
+            .production__modal__items__box
+              p GitHub
+              .modal__item
+                a.github(href=`${item.github}` target="_blank")
+            .production__modal__items__box
+              p URL
+              .modal__item
+                a.url(href=`${item.url}` target="_blank") サイト
+          .production__modal__table
+            dl
+              dt 構成:
+              dd !{item.code}
+            dl
+              dt デプロイ:
+              dd !{item.deploy}
+            dl
+              dt 制作日数:
+              dd !{item.days}
+          .production__modal__text !{item.desc}
+          .modal__close 戻る
     // script置き場
     script(type="text/javascript" src="js/jquery-3.5.0.min.js")
     script(src="js/toggle.min.js")
