@@ -731,9 +731,9 @@ input, select, textarea {
 
 .study__modal__bg {
   background: #000;
-  height: 190rem;
+  height: 100vh;
   opacity: 0.8;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -743,6 +743,7 @@ input, select, textarea {
   height: auto;
   left: 50%;
   margin: auto;
+  margin-bottom: 8rem;
   padding: 4rem 2rem;
   position: absolute;
   top: 10%;
