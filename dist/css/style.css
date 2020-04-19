@@ -464,6 +464,7 @@ input, select, textarea {
   height: 4.8rem;
   letter-spacing: 0;
   position: relative;
+  transition: .3s;
   width: 4.8rem;
 }
 
@@ -479,6 +480,10 @@ input, select, textarea {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 4.8rem;
+}
+
+.production__modal__items .modal__item a:hover {
+  opacity: 1;
 }
 
 .production__modal__items .modal__item .github {
