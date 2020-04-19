@@ -75,6 +75,29 @@
       &:hover
         opacity: 1
         box-shadow: 0rem 0rem .3rem $shadow
+    &__close2
+        width: 4rem
+        height: 4rem
+        position: fixed
+        top: 10%
+        right: 8%
+        transform: translate(-8%,-10%)
+        color: $bg-color
+        border-radius: 50%
+        font-size: 3rem
+        display: flex
+        align-items: center
+        justify-content: center
+        //z-index: 100
+        &:hover
+          background: $bg-color
+          border-radius: 50%
+          color: $font-color
+        +mq(sp)
+          top: 12%
+          width: 3rem
+          height: 3rem
+          font-size: 2rem
   .title
     text-align: center
     font-size: 5rem

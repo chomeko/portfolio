@@ -840,6 +840,36 @@ input, select, textarea {
   opacity: 1;
 }
 
+.study__modal__close2 {
+  align-items: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 3rem;
+  height: 4rem;
+  justify-content: center;
+  position: fixed;
+  right: 8%;
+  top: 10%;
+  transform: translate(-8%, -10%);
+  width: 4rem;
+}
+
+.study__modal__close2:hover {
+  background: #FFFFFF;
+  border-radius: 50%;
+  color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+  .study__modal__close2 {
+    font-size: 2rem;
+    height: 3rem;
+    top: 12%;
+    width: 3rem;
+  }
+}
+
 .study .title {
   font-size: 5rem;
   font-weight: normal;
