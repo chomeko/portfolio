@@ -1054,8 +1054,8 @@ input, select, textarea {
 .top__comment {
   align-items: center;
   background: #F6CA06;
-  border: 1px solid #333333;
   border-radius: 1.4rem;
+  box-shadow: 0.2rem 0.4rem 0.6rem #000000A8;
   display: flex;
   height: 4.8rem;
   justify-content: center;
@@ -1078,14 +1078,14 @@ input, select, textarea {
 
 .top__comment p {
   font-size: 1.4rem;
-  font-weight: normal;
+  font-weight: bold;
   position: relative;
 }
 
 .top__comment::before, .top__comment::after {
   background: #F6CA06;
-  border: 1px solid #555555;
   border-radius: 50%;
+  box-shadow: 0.2rem 0.4rem 0.6rem #000000A8;
   content: '';
   position: absolute;
 }

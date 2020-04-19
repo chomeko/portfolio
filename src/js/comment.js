@@ -3,16 +3,20 @@ $(function () {
     '<p>フロントエンドエンジニアになりたいな〜</p>',
     '<p>転職活動中です</p>',
     '<p>独学で１年間勉強続いています</p>',
-    '<p>コーディングがもっと速くなりたい</p>'
+    '<p>PHPも勉強したい',
+    '<p>wordpreeも勉強したい',
+    '<p>コーディングがもっと速くなりたい</p>',
+    '<p>エンジニアとして手に職をつけたい</p>',
+    '<p>ご連絡お待ちしてます</p>'
   ]
 
   for (var i = 0; i < text.length; i++) {
-    console.log(i);
-    (function (pram) {
+    //変数iをクロージャでキープする
+    (function (val) {
       setTimeout(function () {
-        console.log(text[pram]);
-        $('.top__comment').html(text[pram]);
-      }, pram * 3000);
+        console.log(text[val]);
+        $('.top__comment').hide().fadeIn(3000).html(text[val]);
+      },val * 3000);
     })(i);
   }
 });
