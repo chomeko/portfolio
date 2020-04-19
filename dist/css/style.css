@@ -564,6 +564,35 @@ input, select, textarea {
   opacity: 1;
 }
 
+.production__modal .modal__close2 {
+  align-items: center;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 3rem;
+  height: 4rem;
+  justify-content: center;
+  position: fixed;
+  right: 8%;
+  top: 8%;
+  transform: translate(-8%, -8%);
+  width: 4rem;
+}
+
+.production__modal .modal__close2:hover {
+  background: #FFFFFF;
+  border-radius: 50%;
+  color: #333333;
+}
+
+@media screen and (max-width: 767px) {
+  .production__modal .modal__close2 {
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 .skill.fadein__js {
   opacity: 0;
   transform: translate(0, 10rem);

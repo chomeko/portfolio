@@ -13,8 +13,13 @@ $(function () {
       $(modal).fadeIn();
     });
   });
-  $('.modal__close').click(function () {
+
+  $('.modal__close,.modal__close2').click(function () {
     $('.production__modal').fadeOut();
     $('body,html').stop().animate({ scrollTop: winScrollTop }, 100);
+  });
+
+  $('.production__modal__bg').click(function () {
+    $('.production__modal').fadeOut();
   });
 });
