@@ -6,6 +6,23 @@
   z-index: 1000
   display: flex
   align-items: center
+  p
+    color: $bg-color
+    font-size: 4rem
+    font-weight: bold
+    writing-mode: vertical-rl
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 1000
+    display: flex
+    justify-content: center
+    //box-shadow: 0 0 .5rem $shadow
+    text-shadow: 0 .1rem .3rem $shadow
+    +mq(sp)
+      font-size: 3.6rem
+      height: 40rem
   img
     width: 50rem
     height: auto

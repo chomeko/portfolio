@@ -1396,6 +1396,30 @@ input, select, textarea {
   z-index: 1000;
 }
 
+.loader p {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 4rem;
+  font-weight: bold;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  text-shadow: 0 0.1rem 0.3rem #000000A8;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-rl;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 767px) {
+  .loader p {
+    font-size: 3.6rem;
+    height: 40rem;
+  }
+}
+
 .loader img {
   height: auto;
   max-width: 100%;
