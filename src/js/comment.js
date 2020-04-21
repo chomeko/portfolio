@@ -9,14 +9,16 @@ $(function () {
     '<p>エンジニアとして手に職をつけたい</p>',
     '<p>ご連絡お待ちしてます</p>'
   ]
+  setTimeout(function () {
+    for (var i = 0; i < text.length; i++) {
+      //変数iをクロージャでキープする
+      (function (val) {
+        setTimeout(function () {
+          console.log(text[val]);
+          $('.top__comment').hide().fadeIn(3000).html(text[val]);
+        },val * 3000);
+      })(i);
+    }
+  },3000);
 
-  for (var i = 0; i < text.length; i++) {
-    //変数iをクロージャでキープする
-    (function (val) {
-      setTimeout(function () {
-        console.log(text[val]);
-        $('.top__comment').hide().fadeIn(3000).html(text[val]);
-      },val * 3000);
-    })(i);
-  }
 });
