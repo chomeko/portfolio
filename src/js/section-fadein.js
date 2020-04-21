@@ -1,3 +1,12 @@
+//fadein__jsクラス
+//opacity: 0
+//transform: translate(0,10rem)
+//transition: ease-out 3s
+
+//scrollinクラス
+//opacity: 1
+//transform: translate(0,0)
+
 $(function () {
   //まずcssで.fadein__jsとscrollinクラスを作っておく
   //ウインドウobjにスクロールメソッド
@@ -12,7 +21,7 @@ $(function () {
       var windowHeight = $(window).height();
       //スクロールした量 > 要素からTOPまでの高さ - ウインドウの高さ + 200px下にスクロールとフェードイン
       if (scroll > elemPos - windowHeight + 200) {
-        //scrollinクラスとつける
+        //scrollinクラスをつける
         $(this).addClass('scrollin');
       }
     })

@@ -9,7 +9,7 @@ $(function () {
   setTimeout(function () {
     //配列に入ってる文字数だけ処理を繰り返す
     $.each(txt_array, function (index, element) {
-      //１文字づつspanタグにpacityをつける
+      //１文字づつspanタグにopacityをつける
       var new_element = $("<span/>").text(element).css({ opacity: 0 });
       //作成した要素をh1の末尾に追加していく
       new_element.appendTo(h1);
@@ -17,6 +17,7 @@ $(function () {
       //indexの数値は後方の文字にいくほど大きくなるので
       //それにミリ秒を乗じる事で後ろの文字ほど処理が遅延し文字が遅れて現れる
       new_element.delay(index * 50);
+      //3秒かけて色が濃いくなる
       new_element.animate({ opacity: 1 },3000);
     });
   },3000);

@@ -6,7 +6,8 @@ $(function () {
   $('#img').css({ 'transform': 'translateX(100%)' });
   //3秒後にフェードアウトさせてbodyのスクロール解除
   setTimeout(function () {
-    $('#loader').fadeOut();
+    $('#loader').fadeOut(1000);
+    //fadeOutしたらbodyをスクロールできるようにする
     $('body').removeClass('body__noscroll');
   }, 3000);
 });
