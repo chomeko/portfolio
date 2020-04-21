@@ -1389,8 +1389,17 @@ input, select, textarea {
 .message {
   height: 100vh;
   margin: auto;
+  margin: auto;
+  max-width: 56rem;
   position: relative;
   width: 76.9rem;
+}
+
+@media screen and (max-width: 767px) {
+  .message {
+    margin: auto;
+    max-width: 32rem;
+  }
 }
 
 .message__wrapper {
