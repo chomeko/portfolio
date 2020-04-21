@@ -671,6 +671,10 @@ input, select, textarea {
   margin-bottom: 2.4rem;
 }
 
+.skill__item:nth-of-type(6) img {
+  transform: scaleY(0.4) translateY(1.5rem);
+}
+
 @media screen and (max-width: 767px) {
   .skill__item {
     margin: 0 auto 2.4rem;
@@ -938,7 +942,6 @@ input, select, textarea {
   background: #F6CA06;
   border-radius: 2rem;
   box-shadow: 0rem 0.3rem 0.3rem #000000A8;
-  height: 40rem;
   margin: auto;
   margin-top: 8rem;
   max-width: 56rem;
