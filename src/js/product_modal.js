@@ -13,12 +13,14 @@ $(function () {
       var modal = document.getElementById(target);
       //そのモーダルを表示させる
       $(modal).fadeIn();
+      $('body').toggleClass('body__noscroll');
     });
   });
   //モーダルから戻るボタンをクリックしたら
   $('.modal__close,.modal__close2').click(function () {
     //モーダルを非表示
     $('.production__modal').fadeOut();
+    $('body').toggleClass('body__noscroll');
     //モーダルをクリックした位置に移動する
     $('body,html').stop().animate({ scrollTop: winScrollTop }, 100);
   });
@@ -26,5 +28,6 @@ $(function () {
   $('.production__modal__bg').click(function () {
     //モーダルを非表示にする
     $('.production__modal').fadeOut();
+    $('body').toggleClass('body__noscroll');
   });
 });
