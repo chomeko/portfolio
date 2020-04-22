@@ -613,7 +613,7 @@ input, select, textarea {
 
 .skill__container {
   margin: auto;
-  max-width: 769px;
+  max-width: 569px;
 }
 
 .skill__container:nth-of-type(2) {
@@ -654,7 +654,6 @@ input, select, textarea {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 4rem;
-  padding: 0 4.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -733,13 +732,13 @@ input, select, textarea {
   border: 1px solid #000000;
   display: inline-block;
   height: 2.4rem;
-  width: 22rem;
+  width: 16rem;
 }
 
 @media screen and (max-width: 767px) {
   .skill__item__meter {
     height: 2rem;
-    width: 20rem;
+    width: 16rem;
   }
 }
 
@@ -1294,9 +1293,13 @@ input, select, textarea {
 }
 
 .header__list {
-  margin-top: 4rem;
-  max-height: 60rem;
-  width: 9rem;
+  align-items: center;
+  background: #F6CA06;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 8rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1318,10 +1321,10 @@ input, select, textarea {
 .header__list__item a {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
-  font-size: 1.6rem;
+  font-size: calc(3vh + 5px);
   font-weight: bold;
-  letter-spacing: 0.5em;
-  margin-bottom: 4rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 5vh;
   writing-mode: vertical-lr;
 }
 

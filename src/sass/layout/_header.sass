@@ -60,9 +60,13 @@
     &.open
       transform: translate(0)
   &__list
-    width: 9rem
-    margin-top: 4rem
-    max-height: 60rem
+    width: 8rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 100vh
+    background: $yellow
     +mq(sp)
       width: 100%
       margin-top: 0
@@ -75,10 +79,10 @@
       justify-content: center
       a
         writing-mode: vertical-lr
-        font-size: 1.6rem
+        font-size: calc(3vh + 5px)
         font-weight: bold
-        margin-bottom: 4rem
-        letter-spacing: 0.5em
+        margin-bottom: 5vh
+        letter-spacing: -0.01em
         +mq(sp)
           writing-mode: lr
   &__links
