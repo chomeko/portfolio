@@ -1431,10 +1431,16 @@ input, select, textarea {
 
 .loader img {
   height: auto;
-  max-width: 100%;
   transform: translateX(-50%);
-  transition: transform 3s;
+  transition: transform 4s;
   width: 50rem;
+}
+
+@media screen and (max-width: 767px) {
+  .loader img {
+    max-width: 100%;
+    transition: 5s;
+  }
 }
 
 .message {
