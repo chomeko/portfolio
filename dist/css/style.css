@@ -667,18 +667,12 @@ input, select, textarea {
 .skill__item {
   align-items: flex-end;
   display: flex;
+  justify-content: center;
   margin-bottom: 2.4rem;
 }
 
 .skill__item:nth-of-type(6) img {
   transform: scaleY(0.4) translateY(1.5rem);
-}
-
-@media screen and (max-width: 767px) {
-  .skill__item {
-    margin: 0 auto 2.4rem;
-    width: 30rem;
-  }
 }
 
 .skill__item__icon {

@@ -29,7 +29,6 @@
     flex-wrap: wrap//改行させる
     align-items: center
     margin-top: 4rem
-    //padding: 0 4.5rem
     +mq(sp)
       display: block
       padding: 2rem 2rem
@@ -37,13 +36,14 @@
   &__item
     display: flex//iconとdescを横並びにする
     align-items: flex-end//下揃えにする
+    justify-content: center
     margin-bottom: 2.4rem
     &:nth-of-type(6)
       img
         transform: scaleY(0.4) translateY(1.5rem)
     +mq(sp)
-      width: 30rem
-      margin: 0 auto 2.4rem // 上　左右　下
+      //width: 30rem
+      //margin: 0 auto 2.4rem // 上　左右　下
     &__icon
       margin-right: 2rem
       +mq(sp)
