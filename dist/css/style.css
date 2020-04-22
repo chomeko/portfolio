@@ -1029,7 +1029,7 @@ input, select, textarea {
 
 .top__title {
   font-size: 4rem;
-  padding-top: 8rem;
+  padding-top: 4rem;
   text-align: center;
 }
 
@@ -1294,7 +1294,8 @@ input, select, textarea {
 }
 
 .header__list {
-  margin-top: 8rem;
+  margin-top: 4rem;
+  max-height: 60rem;
   width: 9rem;
 }
 
@@ -1320,7 +1321,7 @@ input, select, textarea {
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 0.5em;
-  margin-bottom: 9.8rem;
+  margin-bottom: 4rem;
   writing-mode: vertical-lr;
 }
 
@@ -1333,7 +1334,7 @@ input, select, textarea {
 }
 
 .header__links {
-  margin-top: 8rem;
+  margin-top: 4rem;
   position: fixed;
   right: 0;
   z-index: 10;
