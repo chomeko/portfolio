@@ -1277,7 +1277,7 @@ input, select, textarea {
     height: 100vh;
     position: relative;
     transform: translate(-100%);
-    transition: ease-in .5s;
+    transition: ease-in 1s;
     width: 100%;
   }
 }
