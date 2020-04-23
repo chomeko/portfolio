@@ -8,7 +8,7 @@ $(function () {
     //変数ターゲットの位置をoffset().topで上から何pxか取得
     var position = target.offset().top
     //アニメーション
-    $('body,html').animate({ scrollTop: position }, 500, "swing");
+    $('body,html').animate({ scrollTop: position }, 1200, "swing");
     //リンク内ページのURLに＃をつけない設定
     return false;
   });
