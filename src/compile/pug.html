@@ -4,11 +4,659 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="転職用ポートフォリオを作りました。Gulp+Pug+Sassを使いNetlifyにデプロイしています。">
+  <meta name="keywords" content="ポートフォリオ, コーディング, HTML">
+  <meta property="og:title" content="Chomeko's portfolio">
+  <meta property="og:description" content="転職用ポートフォリオを作りました。Gulp+Pug+Sassを使いNetlifyにデプロイしています。">
+  <meta property="og:image" content="https://chomeko-portfolio.netlify.app/img/portfoliotop.png">
+  <meta property="og:url" content="https://chomeko-portfolio.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>手動コンパイル練習</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <!--ロード画面-->
+  <div class="loader" id="loader">
+    <p>僕のポートフォリオ</p>
+    <img src="img/monkey.png" alt="バイクに乗った画像">
+  </div>
+
+  <header class="header">
+    <!--ハンバーガーのtoggle-->
+    <div class="header__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--ヘッダーナビ-->
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="#skill">Skill</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#study">Study</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#production">Production</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="header__links">
+        <a href="https://twitter.com/chomeko3o" target="_blank">
+          <span class="twitter"></span>
+        </a>
+        <a href="https://github.com/chomeko" target="_blank">
+        <span class="github"></span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="top">
+      <div class="top__conteiner">
+        <hi class="top__title" id="title--js">
+            Chomeko`s Portfolio
+        </hi>
+        <div class="top__warapper">
+          <div class="top__comment"></div>
+          <div class="top__table">
+            <dl>
+              <dt>年齢 :</dt>
+              <dd>31</dd>
+            </dl>
+            <dl>
+              <dt>身長 :</dt>
+              <dd>168cm</dd>
+            </dl>
+            <dl>
+              <dt>誕生日 :</dt>
+              <dd>s64.1.1</dd>
+            </dl>
+            <dl>
+              <dt>住所 :</dt>
+              <dd>愛知県名古屋市</dd>
+            </dl>
+            <dl>
+              <dt>趣味 :</dt>
+              <dd>GameとAnime</dd>
+            </dl>
+            <dl>
+              <dt>　</dt>
+              <dd>実務経験なし</dd>
+            </dl>
+            <dl>
+              <dt>　</dt>
+              <dd>独学１年目</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill fadein__js" id="skill">
+      <!--skill-->
+      <div class="skill__container">
+        <h2 class="title">Skill</h2>
+        <span class="title__line"></span>
+        <ul class="skill__wrapper">
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">HTML</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_html-5.svg-0.svg" alt="HTML">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">50</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">Pug</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_pug.svg-0.svg" alt="Pug">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">50</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">Sass</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_sass2.svg-0.svg" alt="Sass">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">50</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">Gulp</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_gulp.svg-0.svg" alt="Gulp">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level"></div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">Bootstrap</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_bootstrap.svg-0.svg" alt="Bootstrap">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">50</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">Rails</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_rails2.svg-0.svg" alt="Rails">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">40</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 40%, #fff 40%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">React</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_react2.svg-0.svg" alt="React">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level">20</div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 20%, #fff 20%)"></div>
+            </div>
+          </li>
+          <li class="skill__item">
+            <div class="skill__item__icon">
+              <div class="skill__item__icon">JavaScript</div>
+              <img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_javascript.svg-0.svg" alt="JavaScript">
+            </div>
+            <div class="skill__item__desc">
+              <div class="skill__item__level"></div>
+              <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 20%, #fff 20%)"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--tool-->
+      <div class="tool__container">
+        <h2 class="title">Tool</h2>
+        <span class="title__line"></span>
+        <ul class="tool__wrapper">
+          <li class="tool__item">
+            <div class="tool__item__icon">
+              <div class="tool__item__icon">Vscode</div>
+              <img class="tool__item__img" src="img/file_type_vscode_icon_130084.svg" alt="Vscode">
+            </div>
+            <div class="tool__item__desc">
+              <div class="tool__item__level">50</div>
+              <div class="tool__item__meter" style="background: linear-gradient(to right, #333333 50%, #fff 50%)"></div>
+            </div>
+          </li>
+          <li class="tool__item">
+            <div class="tool__item__icon">
+              <div class="tool__item__icon">Github</div>
+              <img class="tool__item__img" src="img/github_badge.svg" alt="Github">
+            </div>
+            <div class="tool__item__desc">
+              <div class="tool__item__level">60</div>
+              <div class="tool__item__meter" style="background: linear-gradient(to right, #333333 60%, #fff 60%)"></div>
+            </div>
+          </li>
+          <li class="tool__item">
+            <div class="tool__item__icon">
+              <div class="tool__item__icon">XD</div>
+              <img class="tool__item__img" src="img/adobe_xd_folder_icon_133957.svg" alt="XD">
+            </div>
+            <div class="tool__item__desc">
+              <div class="tool__item__level">40</div>
+              <div class="tool__item__meter" style="background: linear-gradient(to right, #333333 40%, #fff 40%)"></div>
+            </div>
+          </li>
+          <li class="tool__item">
+            <div class="tool__item__icon">
+              <div class="tool__item__icon">Slack</div>
+              <img class="tool__item__img" src="img/slack-icon.svg" alt="Slack">
+            </div>
+            <div class="tool__item__desc">
+              <div class="tool__item__level">40</div>
+              <div class="tool__item__meter" style="background: linear-gradient(to right, #333333 40%, #fff 40%)"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="study fadein__js" id="study">
+      <div class="study__continer">
+        <h2 class="tile">Study record</h2>
+        <span class="tile__line"></span>
+        <div class="study__wrapper">
+          <p class="study__text__top" time datetime="2019-3-24">平成30年3月24日</p>
+          <p class="study__text__middle">プログラミング勉強開始</p>
+          <p class="study__text__bottom">
+            プログラミング勉強を始めてから自分が何を<br>
+            してきたかを簡単にまとめました</p>
+          <div class="btn__wrapper">
+            <p>勉強記録を見る</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="production fadein__js" id="production">
+      <div class="production__container">
+        <h2 class="title">Production</h2>
+        <span class="title__line"></span>
+        <div class="production__wrapper">
+          <ul>
+            <li class="production__list">
+              <p class="production__item__title">Calculator</p>
+              <p class="production__item__text">
+                  Ruby on railsをProgateで勉強し１ヶ月後に初めて作った作品になります。現職で使える計算機です
+              </p>
+              <!--複数のモーダルに対応するためdata-target属性を与える-->
+              <div class="btn__wrapper" data-target="modal1">もっと見る</div>
+              <div production__item__img>
+                <img src="img/calculator.png" alt="Calculator">
+              </div>
+            </li>
+            <li class="production__list">
+              <p class="production__item__title">PGMG</p>
+              <p class="production__item__text">
+                Ruby on railsチュートリアル後に作成したブログサイトになります。勉強したことを記事にしてます
+              </p>
+              <div class="btn__wrapper" data-target="modal2">もっと見る</div>
+              <div production__item__img>
+                <img src="img/pgmg.png" alt="PGMG">
+              </div>
+            </li>
+            <li class="production__list">
+              <p class="production__item__title">デイトラ2nd</p>
+              <p class="production__item__text">
+                Html＆cssの理解を深めるために、はにわさんのデイトラ2ndをやりました。gulp,pug,sassを使って初めてコーディングしてます
+              </p>
+              <div class="btn__wrapper" data-target="modal3">もっと見る</div>
+              <div production__item__img>
+                <img src="img/daytry.png" alt="デイトラ2nd">
+              </div>
+            </li>
+            <li class="production__list">
+              <p class="production__item__title">Bell</p>
+              <p class="production__item__text">
+                Reactに興味を持ち勉強後、twitterの1週間企画に参加して初めてReactで作成しました。Redux,persist,firebaseで作りました
+              </p>
+              <div class="btn__wrapper" data-target="modal4">もっと見る</div>
+              <div production__item__img>
+                <img src="img/bell.png" alt="Bell">
+              </div>
+            </li>
+            <li class="production__list">
+              <p class="production__item__title">Portfolio</p>
+              <p class="production__item__text">
+                就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています
+              </p>
+              <div class="btn__wrapper" data-target="modal5">もっと見る</div>
+              <div production__item__img>
+                <img src="img/portfoliotop.png" alt="Portfolio">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact fadein__js" id="contact">
+      <div class="contact__container">
+        <div class="contact__wrapper">
+          <h2 class="tilte">Contact</h2>
+          <span class="tile__line"></span>
+          <p class="contact__commnet">
+            僕へのお問い合わせはこちらのフォームからお願いします。
+          </p>
+          <form name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" action="/message">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email" required>
+            <textarea name="message" cols="30" rows="10"></textarea>
+            <button class="btn" id="submit" type="submit">
+              <p>submit</p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__topbtn"></div>
+    <div class="footer__copyrite">
+      <small>©️chomeko portfolio</small>
+    </div>
+  </footer>
+  <!--モーダル置き場-->
+  <!--studyモーダル-->
+  <div class="study__modal">
+    <div class="study__modal__bg"></div>
+    <div class="study__modal__wrapper">
+      <h2 class="title">
+        平成30年3月24日<br>
+        プログラミング勉強開始
+      </h2>
+      <div class="study__modal__table">
+        <dl>
+          <dt time datetime="2019-3-24">3月24日</dt>
+          <dd>progateでHtml&css,Ruby,Ruby on Railを学ぶ</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-5-4">5月4日</dt>
+          <dd>現在の仕事で使う計算機を開発する</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-5-30">5月30日</dt>
+          <dd>5月30日Railsチュートリアルを２週完了</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-5-31">5月31日</dt>
+          <dd>現場で使えるRuby on rails5速習実践ガイド（書籍）で勉強する</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-7-1">7月1日</dt>
+          <dd>Ruby on railsでブログサイトを制作開始する</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-8-19">8月19日</dt>
+          <dd>
+            8月19日にブログサイトPGMGの完成<br>
+            さくらのVPSにcentos7+Apache+puma+mysqlcapistranoで デプロイしています。
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-9-8">9月8日</dt>
+          <dd>
+            Google Adsenseに合格する<br>
+            微々たるものだけどここで初めて自分の制作したもので収益がでる。
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-11-29">11月29日</dt>
+          <dd>ブログのデザインを変更する</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-11-30">11月30日</dt>
+          <dd>
+            gulp,sass,emmetを使ってフロント側の強化開始<br>
+            書籍をgulp,sass,emmetに書き換えて勉強してみる<br>
+            deploy先をnetlifyにして簡単にデプロイできて感動する。
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2019-12-18">12月18日</dt>
+          <dd>デイトラ２nd(はにわまん)を始める</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-2-8">2月8日</dt>
+          <dd>デイトラ最終課題終了</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-2-11">2月11日</dt>
+          <dd>progateでreact勉強開始</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-2-14">2月14日</dt>
+          <dd>reactチュートリアル開始</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-2-15">2月15日</dt>
+          <dd>reactチュートリアル２週終了</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-2-18">2月18日</dt>
+          <dd>書籍で勉強開始(React.js&Next.js超入門 )</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-3-10">3月10日</dt>
+          <dd>Twitterで１週間で製作物を作る企画１週間チャレンジに参加</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-3-15">3月15日</dt>
+          <dd>React+Redux+Firebaseでいいねボタンを作成</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-3-21">3月21日</dt>
+          <dd>Reactを覚える予定だったが、現職で（製造業）突然の部署移動になってしまい転職を決意、
+              一旦Reactは保留。 コーディング力を今より伸ばす方向に勉強方法を変更する。
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-3-22">3月22日</dt>
+          <dd>
+            MENTAにてメンターと契約<br>
+            メンターの指示で自分でサイトを探し模写スタート
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-3-29">3月29日</dt>
+          <dd>
+            模写完成<br>
+            ポートフォリオの製作開始<br>
+            ワイヤーフレームをXDで作成開始
+          </dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-4-5">4月5日</dt>
+          <dd>デザインカンプ完成</dd>
+        </dl>
+        <dl>
+          <dt time datetime="2020-4-6">4月6日</dt>
+          <dd>portfolioのコーディング開始</dd>
+        </dl>
+      </div>
+      <div class="syudy__modal__close">戻る</div>
+    </div>
+    <div class="study__modal__close2">X</div>
+  </div>
+  <!--productモーダル-->
+  <div class="production__modal" id="modal1">
+    <div class="production__modal__bg"></div>
+    <div class="production__modal__wrapper">
+      <h2 class="production__modal__title"></h2>
+      <div class="production__modal__items">
+        <div class="production__modal__items__box">
+          <p>Github</p>
+          <div class="modal__item">
+            <a href="" class="github" target="_blank"></a>
+          </div>
+        </div>
+        <div class="production__modal__items__box">
+          <p>URL</p>
+          <div class="modal__item">
+            <a href="" class="url" target="_blank">サイト</a>
+          </div>
+        </div>
+      </div>
+      <div class="production__modal__table">
+        <dl>
+          <dt>構成:</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>デプロイ:</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>制作日数:</dt>
+          <dd></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="production__modal" id="modal2">
+    <div class="production__modal__bg"></div>
+    <div class="production__modal__wrapper">
+      <h2 class="production__modal__title"></h2>
+      <div class="production__modal__items">
+        <div class="production__modal__items__box">
+          <p>Github</p>
+          <div class="modal__item">
+            <a href="" class="github" target="_blank"></a>
+          </div>
+        </div>
+        <div class="production__modal__items__box">
+          <p>URL</p>
+          <div class="modal__item">
+            <a href="" class="url" target="_blank">サイト</a>
+          </div>
+        </div>
+      </div>
+      <div class="production__modal__table">
+        <dl>
+          <dt> 構成 :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>デプロイ :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>製作日数 :</dt>
+          <dd></dd>
+        </dl>
+      </div>
+      <div class="production__modal__text"></div>
+      <div class="modal__close">戻る</div>
+    </div>
+    <div class="modal__close2">X</div>
+  </div>
+  <div class="production__modal" id="modal3">
+    <div class="production__modal__bg"></div>
+    <div class="production__modal__wrapper">
+      <h2 class="production__modal__title"></h2>
+      <div class="production__modal__items">
+        <div class="production__modal__items__box">
+          <p>Github</p>
+          <div class="modal__item">
+            <a href="" class="github" target="_blank"></a>
+          </div>
+        </div>
+        <div class="production__modal__items__box">
+          <p>URL</p>
+          <div class="modal__item">
+            <a href="" class="url" target="_blank">サイト</a>
+          </div>
+        </div>
+      </div>
+      <div class="production__modal__table">
+        <dl>
+          <dt> 構成 :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>デプロイ :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>製作日数 :</dt>
+          <dd></dd>
+        </dl>
+      </div>
+      <div class="production__modal__text"></div>
+      <div class="modal__close">戻る</div>
+    </div>
+    <div class="modal__close2">X</div>
+  </div>
+  <div class="production__modal" id="modal4">
+    <div class="production__modal__bg"></div>
+    <div class="production__modal__wrapper">
+      <h2 class="production__modal__title"></h2>
+      <div class="production__modal__items">
+        <div class="production__modal__items__box">
+          <p>Github</p>
+          <div class="modal__item">
+            <a href="" class="github" target="_blank"></a>
+          </div>
+        </div>
+        <div class="production__modal__items__box">
+          <p>URL</p>
+          <div class="modal__item">
+            <a href="" class="url" target="_blank">サイト</a>
+          </div>
+        </div>
+      </div>
+      <div class="production__modal__table">
+        <dl>
+          <dt> 構成 :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>デプロイ :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>製作日数 :</dt>
+          <dd></dd>
+        </dl>
+      </div>
+      <div class="production__modal__text"></div>
+      <div class="modal__close">戻る</div>
+    </div>
+    <div class="modal__close2">X</div>
+  </div>
+  <div class="production__modal" id="modal5">
+    <div class="production__modal__bg"></div>
+    <div class="production__modal__wrapper">
+      <h2 class="production__modal__title"></h2>
+      <div class="production__modal__items">
+        <div class="production__modal__items__box">
+          <p>Github</p>
+          <div class="modal__item">
+            <a href="" class="github" target="_blank"></a>
+          </div>
+        </div>
+        <div class="production__modal__items__box">
+          <p>URL</p>
+          <div class="modal__item">
+            <a href="" class="url" target="_blank">サイト</a>
+          </div>
+        </div>
+      </div>
+      <div class="production__modal__table">
+        <dl>
+          <dt> 構成 :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>デプロイ :</dt>
+          <dd></dd>
+        </dl>
+        <dl>
+          <dt>製作日数 :</dt>
+          <dd></dd>
+        </dl>
+      </div>
+      <div class="production__modal__text"></div>
+      <div class="modal__close">戻る</div>
+    </div>
+    <div class="modal__close2">X</div>
+  </div>
+  <!--script置き場-->
+  <script type="text/javascript" src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
+  <script src=""></script>
 </body>
 </html>
