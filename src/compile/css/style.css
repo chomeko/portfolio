@@ -1,0 +1,301 @@
+/* フォントカラー
+フォントベース: #000000
+灰色: #555555
+背景: #FFFFFF
+黄色: #F6CA06
+紫: #744199
+影: #000000A8
+影: #00000053
+*/
+
+/* spスマホ: 767px */
+/* section: 569px */
+/* pc: 768px */
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.4rem;
+  line-height: 1.5;
+  font-family: "YuGothic", "Yu Gothic","游ゴシック", "游ゴシック体", sans-serif;
+  background: #FFFFFF;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+ul,ol{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+dl,dt,dd{
+  margin: 0;
+}
+
+img{
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+input,select,textarea{
+  outline: none;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+}
+
+a,button{
+  transition: .3s;
+}
+
+a:hover,button:hover{
+  opacity: 0.6;
+}
+
+/* -----使い回しクラス----- */
+.body__scroll{
+  overflow: hidden;
+}
+
+/* -----header----- */
+.header{
+  width: 9rem;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+}
+
+.header__list{
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #f6ca06;
+}
+
+.header__list__item{
+  display: flex;
+  justify-content: center;
+}
+
+.header__list__item a{
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  font-size: calc(3vh + 5px);
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.header__links{
+  margin-top: 4rem;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+
+.header__links a{
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: .2rem .4rem .6rem #00000053;
+  background: #FFFFFF;
+  border-radius: .4rem;
+  margin-bottom: 1.6rem;
+  margin-right: 3.5rem;
+  position: relative;
+}
+
+.header__links a:hover{
+  opacity: 1;
+  box-shadow: 0 0 0.1rem #00000053;
+}
+
+.header__links .twitter{
+  position: absolute;
+  background-image: url(../img/https___cdn.svgporn.com_logos_twitter.svg-0.svg);
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  top: 70%;
+  left: 55%;
+  transform: translate(-55%, -70%);
+}
+
+.header__links .github{
+  position: absolute;
+  background-image: url(../img/github_badge.svg);
+  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media screen and (max-width: 767px){
+  .header{
+    height: 5rem;
+    width: 100%;
+  }
+
+  /* ハンバーガートグルボタン */
+  .header__toggle{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    position: fixed;
+    cursor: pointer;
+    z-index: 10;
+    background: #ffffff;
+  }
+
+  .header__toggle span{
+    display: inline-block;
+    width: 100%;
+    height: 0.4rem;
+    transition: all 1s;
+    border-top: 3px solid #000000;
+    /* spanの位置を３つに分ける */
+    position: absolute;
+    left: 0;
+  }
+  /* 上 */
+  .header__toggle span:nth-of-type(1){
+    top: 0;
+  }
+  /* 真ん中 */
+  .header__toggle span:nth-of-type(2){
+    top: 1.3rem;
+  }
+  /* 下 */
+  .header__toggle span:nth-of-type(3){
+    bottom: 0;
+  }
+
+  /* ボタンがactive時 */
+  .header__toggle .active{
+    transition: all 1s;
+    background: #F6CA06;
+  }
+  /* 上 */
+  .header__toggle .active span:nth-of-type(1){
+    transform: translateY(1rem) rotate(-45deg);
+  }
+  /* 真ん中 */
+  .header__toggle .active span:nth-of-type(2){
+    opacity: 0;
+  }
+  /* 下 */
+  .header__toggle .active span:nth-of-type(3){
+    transform: translateY(-1.5rem) rotate(45deg);
+  }
+
+  .header__nav{
+    width: 100%;
+    height: 100vh;
+    background: #f6ca06;
+    position: relative;
+    /* 1秒かけてアニメーション */
+    transition: ease-in 1s;
+    transform: translateX(-100%);
+  }
+  /* jsでopenクラスをつけると出てくる */
+  .header__nav .open{
+    transform: translate(0);
+  }
+
+  .header__list{
+    width: 100%;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .header__list__item a{
+    -webkit-writing-mode: lr;
+    -ms-writing-mode: lr;
+    writing-mode: lr;
+  }
+
+  .header__links{
+    margin-top: 2rem;
+  }
+}
+
+/* top */
+/* .top{
+  display: none;
+} */
+/* skill */
+.skill{
+  display: none;
+}
+/* syudy */
+.study{
+  display: none;
+}
+/* production */
+.production{
+  display: none;
+}
+/* contact */
+.contact{
+  display: none;
+}
+/* -----footer----- */
+.footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .footer__topbtn{
+  /* ボタンの装飾 */
+  background-image: url(../img/topbtn.svg);
+  width: 3.2rem;
+  height: 6rem;
+  color: #744199;
+  cursor: pointer;
+  /* ボタンの位置 */
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  transform: translate(-2%, -5%);
+}
+
+.footer .footer__copyrite{
+  margin-top: 5.6rem;
+  font-weight: bold;
+  height: 4rem;
+}
+
+/* loader */
+.loader{
+  display: none;
+}
+@media screen and (max-width: 767px){
+  .footer .footer__topbtn{
+    bottom: 2%;
+    right: 2%;
+    transform: translate(-2%, -2%);
+  }
+}
