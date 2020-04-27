@@ -7,15 +7,7 @@ mixin skill__item(name, path, level)
     .skill__item__desc
       .skill__item__level レベル #{level}
       .skill__item__meter(style="background: linear-gradient(to right, #333333 " + level + "%, #fff " + level + "%)")
-//- tool部分のmixin
-mixin skill__item(name, path, level)
-  li.skill__item
-    .skill__item__icon
-      .skill__item__name= name
-      img.skill__item__img(src="img/" + path, alt= name)
-    .skill__item__desc
-      .skill__item__level レベル #{level}
-      .skill__item__meter(style="background: linear-gradient(to right, #333333 " + level + "%, #fff " + level + "%)")
+
 <!DOCTYPE html>
 html(lang="ja")
   head
