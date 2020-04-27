@@ -679,12 +679,6 @@ input, select, textarea {
   margin-right: 2rem;
 }
 
-@media screen and (max-width: 767px) {
-  .skill__item__icon {
-    margin-right: 2rem;
-  }
-}
-
 .skill__item__name {
   color: #555555;
   margin-bottom: 1.6rem;

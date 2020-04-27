@@ -371,8 +371,123 @@ a:hover,button:hover{
 }
 
 /* -----skill----- */
-.skill{
-  display: none;
+/* フェードインするための準備 JSで実装 */
+.skill .fadein__js{
+  opacity: 0;
+  transform: translate(0, 10rem);
+  transition: 3s;
+}
+/* スクロールしたらフェードインする　JSで実装 */
+.skill .scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.skill__container{
+  max-width: 569px;
+  margin: auto;
+}
+/* toolの方のcontainer */
+.skill__container:nth-of-type(2){
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.skill .title{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+  font-weight: normal;
+}
+
+.skill .title__line{
+  display: block;
+  margin: auto;
+  width: 16rem;
+  height: 0.1rem;
+  background: #F6CA06;
+}
+
+.skill__wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+
+.skill__item{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.skill__item:nth-of-type(6) img{
+  transform: scaleY(0.4) translateY(1.5rem);
+}
+
+.skill__item__icon{
+  margin-right: 2rem;
+}
+
+.skill__item__name{
+  text-align: center;
+  margin-bottom: 1.6rem;
+  color: #555555;
+}
+
+.skill__item__img{
+  width: 8rem;
+  height: 8rem;
+}
+
+.skill__item__level{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.skill__item__meter{
+  width: 16rem;
+  height: 2.4rem;
+  border: 1px solid #000000;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+  .skill .title{
+    font-size: 3rem;
+  }
+
+  .skill .title__line{
+    width: 8rem;
+  }
+
+  .skill__wrapper{
+    display: block;
+    padding: 2rem 2rem;
+    margin-top: 2.4rem;
+  }
+
+  .skill__item__name{
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .skill__item__img{
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skill__item__level{
+    font-size: 1.6rem;
+  }
+
+  .skill__item__meter{
+    height: 2rem;
+    width: 16rem;
+  }
 }
 /* -----syudy----- */
 .study{
