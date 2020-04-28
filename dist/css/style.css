@@ -1,5 +1,16 @@
 @charset "UTF-8";
 /* mixin */
+.fadein__js {
+  opacity: 0;
+  transform: translate(0, 10rem);
+  transition: ease-out 3s;
+}
+
+.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /* sp: スマホ */
 /* sp2: swiper用 */
 /* pc: パソコン */
@@ -60,17 +71,6 @@ input, select, textarea {
 
 .contact {
   margin-top: 12rem;
-}
-
-.contact.fadein__js {
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: ease-out 3s;
-}
-
-.contact.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 .contact__container {
@@ -218,17 +218,6 @@ input, select, textarea {
 .production {
   margin-top: 12rem;
   padding-bottom: 3rem;
-}
-
-.production.fadein__js {
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: ease-out 3s;
-}
-
-.production.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 .production__container {
@@ -600,17 +589,6 @@ input, select, textarea {
   }
 }
 
-.skill.fadein__js {
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: ease-out 3s;
-}
-
-.skill.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 .skill__container {
   margin: auto;
   max-width: 569px;
@@ -733,17 +711,6 @@ input, select, textarea {
 .study {
   margin-top: 10rem;
   padding-bottom: 8rem;
-}
-
-.study.fadein__js {
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: ease-out 3s;
-}
-
-.study.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 .study__modal {
