@@ -65,6 +65,39 @@ a:hover,button:hover{
   overflow: hidden;
 }
 
+/* フェードインするための準備 JSで実装 */
+/* .fadein__js{
+  opacity: 0;
+  transform: translate(0, 10rem);
+  transition: 3s;
+} */
+/* スクロールしたらフェードインする　JSで実装 */
+/* .scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+} */
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 10px #000000A8;
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+  color: #744199;
+  font-weight: bold;
+  transition: .3s;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.btn:hover{
+  opacity: 1;
+  box-shadow: 0rem 0rem .3rem #000000A8;
+}
+
 /* -----header----- */
 .header{
   width: 9rem;
@@ -371,18 +404,6 @@ a:hover,button:hover{
 }
 
 /* -----skill----- */
-/* フェードインするための準備 JSで実装 */
-.skill .fadein__js{
-  opacity: 0;
-  transform: translate(0, 10rem);
-  transition: 3s;
-}
-/* スクロールしたらフェードインする　JSで実装 */
-.skill .scrollin{
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
 .skill__container{
   max-width: 569px;
   margin: auto;
@@ -491,8 +512,207 @@ a:hover,button:hover{
 }
 /* -----syudy----- */
 .study{
-  display: none;
+  margin-top: 10rem;
+  padding-bottom: 8rem;
 }
+
+.study .title{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+  font-weight: bold;
+}
+
+.study .title__line{
+  display: block;
+  margin: auto;
+  width: 16rem;
+  height: 0.1rem;
+  background: #F6CA06;
+}
+
+.study__wrapper{
+  max-width: 56rem;
+  margin: auto;
+  margin-top: 8rem;
+  background: #F6CA06;
+  border-radius: 2rem;
+  box-shadow: 0rem .3rem .3rem #000000A8;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.study__text__top{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.study__text__middle{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1.6rem;
+}
+
+.study__text__bottom{
+  font-size: 1.4rem;
+  color: #555555;
+  margin-top: 1.6rem;
+  line-height: 2;
+}
+
+/* モーダル */
+.study__modal{
+  display: none;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+/* モーダルのバッグ背景 */
+.study__modal__bg{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #000;
+opacity: 0.8;
+}
+
+.study__modal__wrapper{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-49%);
+  width: 56rem;
+  height: auto;
+  background: #F6CA06;
+  margin: auto;
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+}
+
+.study__modal .title{
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.study__modal__table{
+  margin-top: 5.6rem;
+}
+
+.study__modal__table dl{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid #000000;
+}
+
+.study__modal__table dt{
+  width: 16rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.study__modal__table dd{
+  width: 100%;
+  color: #555555;
+}
+/* 戻るボタン */
+.study__modal__close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 10px  #000000A8;
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+  color: #744199;
+  font-weight: bold;
+  transition: .3s;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 4rem;
+}
+.study__modal__close:hover{
+  opacity: 1;
+  box-shadow: 0rem 0rem .3rem #000000A8;
+}
+/* 右上のバツボタン */
+.study__modal__close2{
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  transform: translate(-8%, -10%);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.study__modal__close2:hover{
+  background: #FFFFFF;
+  border-radius: 50%;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px){
+
+  .study .title{
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .study .title__line{
+    width: 8rem;
+  }
+
+  .study__wrapper{
+    width: 90%;
+    height: 100%;
+  }
+
+  .study__text__top{
+    font-size: 1.6rem;
+  }
+
+  .study__text__middle{
+  font-size: 2.4rem;
+  }
+
+
+  /* モーダル  */
+  .study__modal__wrapper{
+    max-width: 80%;
+  }
+
+  .study__modal__table dt{
+    width: 10rem;
+    font-size: 1.6rem;
+  }
+
+  .study__modal__table dd{
+    font-size: 1.4rem;
+  }
+
+  .study__modal__close{
+    width: 16rem;
+    height: 4.8rem;
+  }
+
+  .study__modal__close2{
+    top: 12%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+  }
+}
+
 /* -----production----- */
 .production{
   display: none;
@@ -587,9 +807,6 @@ a:hover,button:hover{
 }
 
 /* -----モーダル----- */
-.study__modal{
-  display: none;
-}
 
 .production__modal{
   display: none;
