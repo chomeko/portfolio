@@ -795,7 +795,7 @@ input, select, textarea {
 .study__modal__close {
   align-items: center;
   border-radius: 1rem;
-  box-shadow: 0px 6px 10px #000000A8;
+  box-shadow: 0 0.6rem 1rem #000000A8;
   color: #744199;
   cursor: pointer;
   display: flex;
@@ -929,7 +929,7 @@ input, select, textarea {
 .study .btn__wrapper {
   align-items: center;
   border-radius: 1rem;
-  box-shadow: 0px 6px 10px #000000A8;
+  box-shadow: 0 0.6rem 1rem #000000A8;
   color: #744199;
   cursor: pointer;
   display: flex;
