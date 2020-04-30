@@ -1052,7 +1052,95 @@ opacity: 0.8;
 }
 /* -----contact----- */
 .contact{
-  display: none;
+  margin-top: 12rem;
+}
+
+.contact__container{
+  max-width: 769px;
+  margin: auto;
+}
+
+.contact__wrapper{
+  width: 56rem;
+  margin: auto;
+  box-shadow: 0rem .4rem 1rem #000000A8;
+  border-radius: 2rem;
+  padding: 2.4rem 0rem;
+}
+
+.contact .title{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+  font-weight: normal;
+}
+
+.contact .title__line{
+  display: block;
+  margin: auto;
+  width: 16rem;
+  height: 0.1rem;
+  background: #F6CA06;
+}
+
+.contact .title__comment{
+  line-height: 2em;
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+form{
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+form input, form textarea{
+  width: 40rem;
+  border: 1px solid #000000;
+  border-radius: 1rem;
+  margin-bottom: 4.8rem;
+}
+
+form input{
+  height: 3.2rem;
+}
+
+form input::placeholder{
+  padding-left: 1rem;
+}
+
+form textarea{
+  height: 20rem;
+}
+
+@media screen and (max-width: 768px){
+  .contact__container{
+    padding: 0 2rem;
+  }
+
+  .contact__wrapper{
+    max-width: 100%;
+  }
+  .contact .title{
+    font-size: 3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .contact .title__line{
+    width: 8rem;
+  }
+
+  .contact form{
+    padding: 0 2rem;
+  }
+
+  .contact form input,.contact form textarea{
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+  }
 }
 /* -----footer----- */
 .footer{
