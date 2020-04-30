@@ -715,7 +715,340 @@ opacity: 0.8;
 
 /* -----production----- */
 .production{
+  margin-top: 12rem;
+  padding-bottom: 3rem;
+}
+
+.production__container{
+  max-width: 769px;
+  margin: auto;
+}
+
+.production .title{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+  font-weight: normal;
+}
+
+.production .title__line{
+  display: block;
+  margin: auto;
+  width: 16rem;
+  height: 0.1rem;
+  background: #F6CA06;
+}
+
+.production__wrapper{
+  margin-top: 4rem;
+  padding: 0 4.5rem;
+}
+
+.production__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.production__item{
+  margin-bottom: 4.8rem;
+}
+
+.production__item__title{
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.production__item__text{
+  margin: auto;
+  font-size: 1.4rem;
+  color: #555555;
+  width: 32rem;
+  height: 6.3rem;
+}
+
+.production__item .btn__wrapper{
+  width: 8rem;
+  margin: auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: #F6CA06;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all .3s;
+  padding: .5rem;
+}
+
+.production__item .btn__wrapper:hover{
+  background: #FFFFFF;
+}
+
+.production__item__img{
+  width: 32rem;
+  height: 35rem;
+}
+
+.production__item__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  box-shadow: .5rem .9rem 1rem #000000A8;
+}
+
+/* 3番目のLiはセンター */
+.production__item:nth-child(3){
+  margin: auto;
+  margin-bottom: 4.8rem;
+}
+
+/* 4番目の以降のli画像をw100％にする */
+.production__item:nth-child(n+4) .production__item__img{
+  width: 100%;
+  height: auto;
+}
+
+.production__item:nth-child(n+4) img{
+  height: 40rem;
+}
+
+/* productionのモーダル */
+.production__modal{
   display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.production__modal__bg{
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+}
+
+.production__modal__wrapper{
+  width: 56rem;
+  height: auto;
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.production__modal__title{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.production__modal__items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12.4rem;
+  margin: auto;
+}
+
+.production__item:nth-child(3) .production__modal__items{
+  justify-content: center;
+}
+
+.production__item:nth-child(3) .production__modal__items__box{
+  display: none;
+}
+
+.production__modal__items__box{
+  text-align: center;
+}
+
+.production__modal__items__box a{
+  background-size: contain;
+  width: 4.8rem;
+  height: 4.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.production__modal__items__box a:hover{
+  opacity: 1;
+}
+
+.production__modal__items__box .modal__item{
+  width: 4.8rem;
+  height: 4.8rem;
+  background: #F6CA06;
+  border-radius: .5rem;
+  box-shadow: .1rem .6rem .6rem #000000A8;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0;
+  transition: .3s;
+}
+
+.production__modal__items__box .modal__item:hover{
+  box-shadow: 0rem .1rem .3rem #000000A8;
+}
+/* GitHubの画像 */
+.production__modal__items__box .github{
+  background-image: url(../img/github_badge.svg);
+}
+/* URLのサイトを中央配置 */
+.production__modal__items__box .url{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.production__modal__table{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 5.6rem;
+}
+
+.production__modal__table dl{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.production__modal__table dt{
+  width: 10rem;
+  margin-left: 13rem;
+}
+
+.production__modal__table dd{
+  width: 20rem;
+}
+
+.production__modal__text{
+  color: #555555;
+  line-height: 2em;
+}
+
+.production__modal .modal__close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0rem .6rem 1rem #000000A8;
+  width: 20rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+  color: #744199;
+  font-weight: bold;
+  transition: .3s;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.production__modal .modal__close:hover{
+  opacity: 1;
+  box-shadow: 0rem 0rem .3rem #000000A8;
+}
+
+.production__modal .modal__close2{
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 5%;
+  right: 8%;
+  transform: translate(-8%, -5%);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.production__modal .modal__close2:hover{
+  background: #FFFFFF;
+  border-radius: 50%;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px){
+  .production .title{
+    font-size: 3rem;
+  }
+
+  .production .title__line{
+    width: 8rem;
+  }
+
+  .production__wrapper{
+    padding: 0 2rem;
+  }
+
+  .production__list{
+    display: block;
+  }
+
+  .production__item__img{
+    width: 100%;
+    max-width: 32rem;
+    height: 100%;
+    margin: auto;
+  }
+
+  .production__item__img img{
+    max-width: 100%;
+  }
+
+  .production__item__text{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .production__modal{
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .production__modal__wrapper{
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 8rem;
+  }
+
+  .production__modal__title{
+    font-size: 2.4rem;
+  }
+
+  .production__modal__table dl{
+    text-align: center;
+  }
+
+  .production__modal__table dt{
+    margin-left: 0;
+  }
+
+  .production__modal__text{
+    line-height: 1.5em;
+  }
+
+  .production__modal__close2{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+  }
 }
 /* -----contact----- */
 .contact{
@@ -804,10 +1137,4 @@ opacity: 0.8;
     max-width: 100%;
     transition: 5s;
   }
-}
-
-/* -----モーダル----- */
-
-.production__modal{
-  display: none;
 }
