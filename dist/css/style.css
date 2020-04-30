@@ -281,60 +281,6 @@ input, select, textarea {
   /* 4番目以降のLiの画像はwidth:100%にする */
 }
 
-.production__item__img {
-  height: 35rem;
-  width: 32rem;
-}
-
-@media screen and (max-width: 767px) {
-  .production__item__img {
-    height: 100%;
-    margin: auto;
-    max-width: 32rem;
-    width: 100%;
-  }
-}
-
-.production__item__img img {
-  -o-object-fit: cover;
-  -o-object-position: top;
-  box-shadow: 5px 9px 10px #000000A8;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .production__item__img img {
-    -o-object-fit: cover;
-    max-width: 100%;
-    object-fit: cover;
-  }
-}
-
-.production__item:nth-child(3) {
-  margin: auto;
-  margin-bottom: 4.8rem;
-}
-
-.production__item:nth-child(3) .production__modal__items {
-  justify-content: center;
-}
-
-.production__item:nth-child(3) .production__modal__items__box:nth-of-type(2) {
-  display: none;
-}
-
-.production__item:nth-child(n+4) .production__item__img {
-  height: auto;
-  width: 100%;
-}
-
-.production__item:nth-child(n+4) .production__item__img img {
-  height: 40rem;
-}
-
 .production__item__title {
   font-size: 2.4rem;
   font-weight: bold;
@@ -373,6 +319,58 @@ input, select, textarea {
 
 .production__item .btn-wrapper:hover {
   background: #FFFFFF;
+}
+
+.production__item__img {
+  height: 35rem;
+  width: 32rem;
+}
+
+@media screen and (max-width: 767px) {
+  .production__item__img {
+    height: 100%;
+    margin: auto;
+    max-width: 32rem;
+    width: 100%;
+  }
+}
+
+.production__item__img img {
+  -o-object-fit: cover;
+  -o-object-position: top;
+  box-shadow: 5px 9px 10px #000000A8;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .production__item__img img {
+    max-width: 100%;
+  }
+}
+
+.production__item:nth-child(3) {
+  margin: auto;
+  margin-bottom: 4.8rem;
+}
+
+.production__item:nth-child(3) .production__modal__items {
+  justify-content: center;
+}
+
+.production__item:nth-child(3) .production__modal__items__box:nth-of-type(2) {
+  display: none;
+}
+
+.production__item:nth-child(n+4) .production__item__img {
+  height: auto;
+  width: 100%;
+}
+
+.production__item:nth-child(n+4) .production__item__img img {
+  height: 40rem;
 }
 
 .production__modal {
@@ -494,7 +492,6 @@ input, select, textarea {
 }
 
 .production__modal__table dl {
-  align-items: baseline;
   display: flex;
   justify-content: center;
   margin-bottom: 1.6rem;
@@ -562,7 +559,6 @@ input, select, textarea {
 
 .production__modal .modal__close2 {
   align-items: center;
-  border-radius: 50%;
   color: #FFFFFF;
   display: flex;
   font-size: 3rem;

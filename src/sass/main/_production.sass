@@ -31,41 +31,6 @@
       display: block
   &__item
     margin-bottom: 4.8rem
-    &__img
-      width: 32rem
-      height: 35rem
-      +mq(sp)
-        width: 100%
-        max-width: 32rem
-        height: 100%
-        margin: auto
-      img
-        width: 100%
-        height: 100%
-        object-fit: cover
-        object-position: top
-        box-shadow: 5px 9px 10px $shadow
-        +mq(sp)
-          max-width: 100%
-          //height: 40rem
-          object-fit: cover
-    /* 3番目のLiはセンター */
-    &:nth-child(3)
-      margin: auto
-      margin-bottom: 4.8rem
-      //3番目のliのURLはないので非表示にしてGitHubをセンターにする
-      .production__modal__items
-        justify-content: center
-      .production__modal__items__box
-        &:nth-of-type(2)
-          display: none
-    /* 4番目以降のLiの画像はwidth:100%にする */
-    &:nth-child(n+4)
-      .production__item__img
-        width: 100%
-        height: auto
-        img
-          height: 40rem
     &__title
       text-align: center
       font-size: 2.4rem
@@ -94,6 +59,39 @@
       padding: .5rem
       &:hover
         background: $bg-color
+    &__img
+      width: 32rem
+      height: 35rem
+      +mq(sp)
+        width: 100%
+        max-width: 32rem
+        height: 100%
+        margin: auto
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: top
+        box-shadow: 5px 9px 10px $shadow
+        +mq(sp)
+          max-width: 100%
+    /* 3番目のLiはセンター */
+    &:nth-child(3)
+      margin: auto
+      margin-bottom: 4.8rem
+      //3番目のliのURLはないので非表示にしてGitHubをセンターにする
+      .production__modal__items
+        justify-content: center
+      .production__modal__items__box
+        &:nth-of-type(2)
+          display: none
+    /* 4番目以降のLiの画像はwidth:100%にする */
+    &:nth-child(n+4)
+      .production__item__img
+        width: 100%
+        height: auto
+        img
+          height: 40rem
   &__modal
     display: none
     width: 100%
@@ -176,7 +174,6 @@
       margin-top: 5.6rem
       dl
         display: flex
-        align-items: baseline
         justify-content: center
         margin-bottom: 1.6rem
         +mq(sp)
@@ -212,7 +209,6 @@
       right: 8%
       transform: translate(-8%,-5%)
       color: $bg-color
-      border-radius: 50%
       font-size: 3rem
       display: flex
       align-items: center
