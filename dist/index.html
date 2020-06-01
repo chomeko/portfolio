@@ -133,6 +133,15 @@
             </li>
             <li class="skill__item">
               <div class="skill__item__icon">
+                <div class="skill__item__name">Vue</div><img class="skill__item__img" src="img/svg0.svg" alt="Vue"/>
+              </div>
+              <div class="skill__item__desc">
+                <div class="skill__item__level">レベル 30</div>
+                <div class="skill__item__meter" style="background: linear-gradient(to right, #333333 30%, #fff 30%)"></div>
+              </div>
+            </li>
+            <li class="skill__item">
+              <div class="skill__item__icon">
                 <div class="skill__item__name">React</div><img class="skill__item__img" src="img/https___cdn.svgporn.com_logos_react2.svg-0.svg" alt="React"/>
               </div>
               <div class="skill__item__desc">
@@ -247,6 +256,13 @@
                 <!--複数のモーダルに対応するためdata-target属性を与える-->
                 <div class="btn-wrapper" data-target="modal5">もっと見る</div>
                 <div class="production__item__img"><img src="img/portfoliotop.png" alt="Portfolio"/></div>
+              </li>
+              <li class="production__item">
+                <p class="production__item__title">My todo</p>
+                <p class="production__item__text">vueの書籍を１冊勉強後にTODOリストを作成しました。vuexで状態を管理して、localstorageで保存しています。</p>
+                <!--複数のモーダルに対応するためdata-target属性を与える-->
+                <div class="btn-wrapper" data-target="modal6">もっと見る</div>
+                <div class="production__item__img"><img src="img/todo.png" alt="My todo"/></div>
               </li>
             </ul>
           </div>
@@ -399,6 +415,14 @@
           <dl>
             <dt tima="tima" datatime="2020-5-20">5月20日</dt>
             <dd>TODOリスト作成開始</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-5-31">5月31日</dt>
+            <dd>TODOリスト完成</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-6-1">6月1日</dt>
+            <dd>TODOリストのブラッシュアップ開始</dd>
           </dl>
         </div>
         <div class="study__modal__close">戻る</div>
@@ -567,6 +591,39 @@
           </dl>
         </div>
         <div class="production__modal__text">こちらは転職活動用に作った僕のポートフォリオになります。XDでデザインを作り、gulp,pug,sassを使いコーディングしていきました。デプロイ先はよく使うNetlifyを使っています。仕事をしながら1日３時間ほどかけて作成しました。メールformもNetlifyのメールformを活用しています。アニメーションに関しては全て手作業でライブラリは使わずに実装しています。</div>
+        <div class="modal__close">戻る</div>
+      </div>
+      <div class="modal__close2">X</div>
+    </div>
+    <div class="production__modal" id="modal6">
+      <div class="production__modal__bg"></div>
+      <div class="production__modal__wrapper">
+        <h2 class="production__modal__title"></h2>
+        <div class="production__modal__items">
+          <div class="production__modal__items__box">
+            <p>GitHub</p>
+            <div class="modal__item"><a class="github" href="https://github.com/chomeko/my-todo" target="_blank"></a></div>
+          </div>
+          <div class="production__modal__items__box">
+            <p>URL</p>
+            <div class="modal__item"><a class="url" href="https://chomeko-todo.netlify.app/my-todo/" target="_blank">サイト</a></div>
+          </div>
+        </div>
+        <div class="production__modal__table">
+          <dl>
+            <dt>構成:</dt>
+            <dd>vue vuex</dd>
+          </dl>
+          <dl>
+            <dt>デプロイ:</dt>
+            <dd>Netlify</dd>
+          </dl>
+          <dl>
+            <dt>制作日数:</dt>
+            <dd>11日</dd>
+          </dl>
+        </div>
+        <div class="production__modal__text">vueの書籍を一通り勉強した後にサポートページを参考にしてTODOアプリをvuexに書き換えて作ってみました。データはlocalstorageに保存しています。こちらも仕事をしながら1日３時間ほどかけて作成しています。storeからgettersで値を取得し、値を変更後dispatchでactionに値を渡しミューテーションを実行してstoreのデータを更新するという流れがより理解が深まったと思います。またv-ifやv-bindやv-onなどのディレクティブも使って動きもつけたりしています。まだまだ勉強始めたばかりなので、これからもっと色んな事ができるように勉強していきます。</div>
         <div class="modal__close">戻る</div>
       </div>
       <div class="modal__close2">X</div>

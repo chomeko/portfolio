@@ -92,6 +92,7 @@ html(lang="ja")
             +skill__item("Gulp", "https___cdn.svgporn.com_logos_gulp.svg-0.svg", "50")
             +skill__item("Bootstrap", "https___cdn.svgporn.com_logos_bootstrap.svg-0.svg", "50")
             +skill__item("Rails", "https___cdn.svgporn.com_logos_rails2.svg-0.svg", "40")
+            +skill__item("Vue", "svg0.svg", "30")
             +skill__item("React", "https___cdn.svgporn.com_logos_react2.svg-0.svg", "20")
             +skill__item("JavaScript", "https___cdn.svgporn.com_logos_javascript.svg-0.svg", "20")
         // tool
@@ -154,6 +155,12 @@ html(lang="ja")
                   'title': 'Portfolio',
                   'path': 'img/portfoliotop.png',
                   'tex': '就職活動をするためポートフォリオの作成をしました。XDで自分でデザインをし、gulp,pug,sassでコーディングしています。',
+                },
+                {
+                  'modal': '6',
+                  'title': 'My todo',
+                  'path': 'img/todo.png',
+                  'tex': 'vueの書籍を１冊勉強後にTODOリストを作成しました。vuexで状態を管理して、localstorageで保存しています。',
                 },
               ];
             ul.production__list
@@ -306,6 +313,12 @@ html(lang="ja")
           dl
             dt(tima datatime="2020-5-20") 5月20日
             dd TODOリスト作成開始
+          dl
+            dt(tima datatime="2020-5-31") 5月31日
+            dd TODOリスト完成
+          dl
+            dt(tima datatime="2020-6-1") 6月1日
+            dd TODOリストのブラッシュアップ開始
         .study__modal__close 戻る
       .study__modal__close2 X
     // productモーダル
@@ -351,6 +364,14 @@ html(lang="ja")
           'deploy': 'Netlify',
           'desc': 'こちらは転職活動用に作った僕のポートフォリオになります。XDでデザインを作り、gulp,pug,sassを使いコーディングしていきました。デプロイ先はよく使うNetlifyを使っています。仕事をしながら1日３時間ほどかけて作成しました。メールformもNetlifyのメールformを活用しています。アニメーションに関しては全て手作業でライブラリは使わずに実装しています。'
         },
+        {'modal': '6',
+          'github': 'https://github.com/chomeko/my-todo',
+          'url': 'https://chomeko-todo.netlify.app/my-todo/',
+          'code': 'vue vuex',
+          'days': '11日',
+          'deploy': 'Netlify',
+          'desc': 'vueの書籍を一通り勉強した後にサポートページを参考にしてTODOアプリをvuexに書き換えて作ってみました。データはlocalstorageに保存しています。こちらも仕事をしながら1日３時間ほどかけて作成しています。storeからgettersで値を取得し、値を変更後dispatchでactionに値を渡しミューテーションを実行してstoreのデータを更新するという流れがより理解が深まったと思います。またv-ifやv-bindやv-onなどのディレクティブも使って動きもつけたりしています。まだまだ勉強始めたばかりなので、これからもっと色んな事ができるように勉強していきます。'
+        }
       ];
     each item in arr
       .production__modal(id= "modal"+ `${item.modal}`)
