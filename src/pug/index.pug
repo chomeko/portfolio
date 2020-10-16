@@ -162,6 +162,18 @@ html(lang="ja")
                   'path': 'img/todo.png',
                   'tex': 'vueの書籍を１冊勉強後にTODOリストを作成しました。vuexで状態を管理して、localstorageで保存しています。',
                 },
+                {
+                  'modal': '7',
+                  'title': 'Twitter Fight',
+                  'path': 'img/ついファイ.png',
+                  'tex': 'vueでゲームを作りました。firebaseのtwitterログインでユーザー登録し、ユーザー同士で勝負するゲームです。',
+                },
+                {
+                  'modal': '8',
+                  'title': 'chomeko Designs',
+                  'path': 'img/chomeko Designs.png',
+                  'tex': 'vue3が出たので、早速試して作ったサイトです。illustrator、aftereffect、Lottieを使ったデザインをUPして行こうと思っています。',
+                },
               ];
             ul.production__list
               //eachで回す
@@ -319,6 +331,18 @@ html(lang="ja")
           dl
             dt(tima datatime="2020-6-1") 6月1日
             dd TODOリストのブラッシュアップ開始
+          dl
+            dt(tima datatime="2020-6-30") 6月30日
+            dd vueでゲーム制作開始
+          dl
+            dt(tima datatime="2020-10-3") 10月3日
+            dd vueでゲーム完成
+          dl
+            dt(tima datatime="2020-10-9") 10月9日
+            dd vue3でデザインサイト作成開始
+          dl
+            dt(tima datatime="2020-10-16") 10月16日
+            dd vue3でデザインサイトを作成しデプロイする
         .study__modal__close 戻る
       .study__modal__close2 X
     // productモーダル
@@ -371,6 +395,22 @@ html(lang="ja")
           'days': '11日',
           'deploy': 'Netlify',
           'desc': 'vueの書籍を一通り勉強した後にサポートページを参考にしてTODOアプリをvuexに書き換えて作ってみました。データはlocalstorageに保存しています。こちらも仕事をしながら1日３時間ほどかけて作成しています。storeからgettersで値を取得し、値を変更後dispatchでactionに値を渡しミューテーションを実行してstoreのデータを更新するという流れがより理解が深まったと思います。またv-ifやv-bindやv-onなどのディレクティブも使って動きもつけたりしています。まだまだ勉強始めたばかりなので、これからもっと色んな事ができるように勉強していきます。'
+        },
+        {'modal': '7',
+          'github': 'https://github.com/chomeko/twitter-fight',
+          'url': 'https://twitter-fight.web.app/',
+          'code': 'vue2',
+          'days': '3ヶ月',
+          'deploy': 'Firebase',
+          'desc': 'vueでゲームを作りました。firebaseのTwitterログインを使ってユーザー登録をし、Cloud Firestoreでデータを保存しています。制作期間が長くなった作品で、firestoreの読み込み数が多くまだ未完成なものとなってますが、すごく勉強になり成長できたキッカケになりました。Cloud Firestoreでget,set,add,updateなど色々使いvueだけじゃなくfirebaseの事も勉強になりました。XDを使いデザインし、aftereffectで動きをつけ、Lottieを使いアニメーションなどを自作で作りました。クソゲーですが...'
+        },
+        {'modal': '8',
+          'github': 'https://github.com/chomeko/chomeanime',
+          'url': 'https://chomeanime.netlify.app/',
+          'code': 'vue3',
+          'days': '7日',
+          'deploy': 'Firebase',
+          'desc': 'vue3が出たので、早速試してみようと思い作ったサイトです。illustratorとaftereffectとLottieを使ったデザインを自分で作りどんどんUPしていこうと思い作りました。まずはLottieをvue3のcomposition APIを使い書き換える事から始めました。vue2とは色々変わっていて、大変でしたがこれからはvue3をどんどん使って行こうと思います。illustratorやAfterEffectもどんどん勉強していいデザインを作れるようになって、自分の開発したappに使って行こうと思います。'
         }
       ];
     each item in arr

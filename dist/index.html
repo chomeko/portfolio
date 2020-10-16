@@ -264,6 +264,20 @@
                 <div class="btn-wrapper" data-target="modal6">もっと見る</div>
                 <div class="production__item__img"><img src="img/todo.png" alt="My todo"/></div>
               </li>
+              <li class="production__item">
+                <p class="production__item__title">Twitter Fight</p>
+                <p class="production__item__text">vueでゲームを作りました。firebaseのtwitterログインでユーザー登録し、ユーザー同士で勝負するゲームです。</p>
+                <!--複数のモーダルに対応するためdata-target属性を与える-->
+                <div class="btn-wrapper" data-target="modal7">もっと見る</div>
+                <div class="production__item__img"><img src="img/ついファイ.png" alt="Twitter Fight"/></div>
+              </li>
+              <li class="production__item">
+                <p class="production__item__title">chomeko Designs</p>
+                <p class="production__item__text">vue3が出たので、早速試して作ったサイトです。illustrator、aftereffect、Lottieを使ったデザインをUPして行こうと思っています。</p>
+                <!--複数のモーダルに対応するためdata-target属性を与える-->
+                <div class="btn-wrapper" data-target="modal8">もっと見る</div>
+                <div class="production__item__img"><img src="img/chomeko Designs.png" alt="chomeko Designs"/></div>
+              </li>
             </ul>
           </div>
         </div>
@@ -423,6 +437,22 @@
           <dl>
             <dt tima="tima" datatime="2020-6-1">6月1日</dt>
             <dd>TODOリストのブラッシュアップ開始</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-6-30">6月30日</dt>
+            <dd>vueでゲーム制作開始</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-10-3">10月3日</dt>
+            <dd>vueでゲーム完成</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-10-9">10月9日</dt>
+            <dd>vue3でデザインサイト作成開始</dd>
+          </dl>
+          <dl>
+            <dt tima="tima" datatime="2020-10-16">10月16日</dt>
+            <dd>vue3でデザインサイトを作成しデプロイする</dd>
           </dl>
         </div>
         <div class="study__modal__close">戻る</div>
@@ -624,6 +654,72 @@
           </dl>
         </div>
         <div class="production__modal__text">vueの書籍を一通り勉強した後にサポートページを参考にしてTODOアプリをvuexに書き換えて作ってみました。データはlocalstorageに保存しています。こちらも仕事をしながら1日３時間ほどかけて作成しています。storeからgettersで値を取得し、値を変更後dispatchでactionに値を渡しミューテーションを実行してstoreのデータを更新するという流れがより理解が深まったと思います。またv-ifやv-bindやv-onなどのディレクティブも使って動きもつけたりしています。まだまだ勉強始めたばかりなので、これからもっと色んな事ができるように勉強していきます。</div>
+        <div class="modal__close">戻る</div>
+      </div>
+      <div class="modal__close2">X</div>
+    </div>
+    <div class="production__modal" id="modal7">
+      <div class="production__modal__bg"></div>
+      <div class="production__modal__wrapper">
+        <h2 class="production__modal__title"></h2>
+        <div class="production__modal__items">
+          <div class="production__modal__items__box">
+            <p>GitHub</p>
+            <div class="modal__item"><a class="github" href="https://github.com/chomeko/twitter-fight" target="_blank"></a></div>
+          </div>
+          <div class="production__modal__items__box">
+            <p>URL</p>
+            <div class="modal__item"><a class="url" href="https://twitter-fight.web.app/" target="_blank">サイト</a></div>
+          </div>
+        </div>
+        <div class="production__modal__table">
+          <dl>
+            <dt>構成:</dt>
+            <dd>vue2</dd>
+          </dl>
+          <dl>
+            <dt>デプロイ:</dt>
+            <dd>Firebase</dd>
+          </dl>
+          <dl>
+            <dt>制作日数:</dt>
+            <dd>3ヶ月</dd>
+          </dl>
+        </div>
+        <div class="production__modal__text">vueでゲームを作りました。firebaseのTwitterログインを使ってユーザー登録をし、Cloud Firestoreでデータを保存しています。制作期間が長くなった作品で、firestoreの読み込み数が多くまだ未完成なものとなってますが、すごく勉強になり成長できたキッカケになりました。Cloud Firestoreでget,set,add,updateなど色々使いvueだけじゃなくfirebaseの事も勉強になりました。XDを使いデザインし、aftereffectで動きをつけ、Lottieを使いアニメーションなどを自作で作りました。クソゲーですが...</div>
+        <div class="modal__close">戻る</div>
+      </div>
+      <div class="modal__close2">X</div>
+    </div>
+    <div class="production__modal" id="modal8">
+      <div class="production__modal__bg"></div>
+      <div class="production__modal__wrapper">
+        <h2 class="production__modal__title"></h2>
+        <div class="production__modal__items">
+          <div class="production__modal__items__box">
+            <p>GitHub</p>
+            <div class="modal__item"><a class="github" href="https://github.com/chomeko/chomeanime" target="_blank"></a></div>
+          </div>
+          <div class="production__modal__items__box">
+            <p>URL</p>
+            <div class="modal__item"><a class="url" href="https://chomeanime.netlify.app/" target="_blank">サイト</a></div>
+          </div>
+        </div>
+        <div class="production__modal__table">
+          <dl>
+            <dt>構成:</dt>
+            <dd>vue3</dd>
+          </dl>
+          <dl>
+            <dt>デプロイ:</dt>
+            <dd>Firebase</dd>
+          </dl>
+          <dl>
+            <dt>制作日数:</dt>
+            <dd>7日</dd>
+          </dl>
+        </div>
+        <div class="production__modal__text">vue3が出たので、早速試してみようと思い作ったサイトです。illustratorとaftereffectとLottieを使ったデザインを自分で作りどんどんUPしていこうと思い作りました。まずはLottieをvue3のcomposition APIを使い書き換える事から始めました。vue2とは色々変わっていて、大変でしたがこれからはvue3をどんどん使って行こうと思います。illustratorやAfterEffectもどんどん勉強していいデザインを作れるようになって、自分の開発したappに使って行こうと思います。</div>
         <div class="modal__close">戻る</div>
       </div>
       <div class="modal__close2">X</div>
